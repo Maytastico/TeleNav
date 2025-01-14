@@ -1,0 +1,35 @@
+{
+	"name": "ROS2 Nav2 Development Container",
+	"image": "osrf/ros:jazzy-desktop",
+
+	"runArgs": [
+		"--init",
+		"--net=host",
+		"--privileged",
+		"-e", "DISPLAY=${env:DISPLAY}",
+		"-e", "WAYLAND_DISPLAY=wayland-0",
+		"-e", "XDG_RUNTIME_DIR=/run/user/${env:UID}",
+		"-e", "XDG_SESSION_TYPE=wayland",
+		"-e", "GDK_BACKEND=wayland",
+		"-e", "QT_QPA_PLATFORM=wayland",
+		"-v", "/run/user/${env:UID}/wayland-0:/tmp/wayland-0",
+		"--device", "/dev/dri:/dev/dri"
+	],
+
+	"postCreateCommand": "sudo apt-get update &&  sudo apt-get install -y ros-jazzy-navigation2 ros-jazzy-nav2-bringup ros-${ROS_DISTRO}-ros-gz libqt5waylandclient5 libqt5waylandcompositor5 qtwayland5 libxcb-xinerama0 libxcb-randr0 libxcb-shape0 && rosdep update && echo 'source /opt/ros/jazzy/setup.bash' >> /root/.bashrc",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"ms-python.python",
+				"ms-iot.vscode-ros"
+			]
+		},
+		"settings": {
+			"terminal.integrated.shell.linux": "/bin/bash"
+		}
+	},
+
+	"remoteUser": "root"
+}
