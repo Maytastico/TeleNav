@@ -1,0 +1,5 @@
+[0.018s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/install/bumperbot_py_examples:/opt/ros/iron /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/build/bumperbot_cpp_examples -- -j6 -l6
+[0.035s] [0mCMake Error: The source directory "/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/bumperbot_cpp_examples" does not exist.
+[0.035s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.037s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.253s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/build/bumperbot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/install/bumperbot_py_examples:/opt/ros/iron /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/build/bumperbot_cpp_examples -- -j6 -l6

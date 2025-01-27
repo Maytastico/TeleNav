@@ -1,0 +1,25 @@
+[0.495s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/first_package': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/first_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/first_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/first_package build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/first_package/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/first_package/install.log --single-version-externally-managed install_data
+[0.686s] running egg_info
+[0.686s] writing ../build/first_package/first_package.egg-info/PKG-INFO
+[0.687s] writing dependency_links to ../build/first_package/first_package.egg-info/dependency_links.txt
+[0.687s] writing entry points to ../build/first_package/first_package.egg-info/entry_points.txt
+[0.687s] writing requirements to ../build/first_package/first_package.egg-info/requires.txt
+[0.687s] writing top-level names to ../build/first_package/first_package.egg-info/top_level.txt
+[0.688s] reading manifest file '../build/first_package/first_package.egg-info/SOURCES.txt'
+[0.689s] writing manifest file '../build/first_package/first_package.egg-info/SOURCES.txt'
+[0.689s] running build
+[0.689s] running build_py
+[0.689s] copying first_package/publisher.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/first_package/build/lib/first_package
+[0.690s] running install
+[0.690s] running install_lib
+[0.691s] copying /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/first_package/build/lib/first_package/publisher.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/first_package/lib/python3.10/site-packages/first_package
+[0.692s] byte-compiling /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/first_package/lib/python3.10/site-packages/first_package/publisher.py to publisher.cpython-310.pyc
+[0.692s] running install_data
+[0.692s] running install_egg_info
+[0.694s] removing '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/first_package/lib/python3.10/site-packages/first_package-0.0.0-py3.10.egg-info' (and everything under it)
+[0.694s] Copying ../build/first_package/first_package.egg-info to /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/first_package/lib/python3.10/site-packages/first_package-0.0.0-py3.10.egg-info
+[0.695s] running install_scripts
+[0.710s] Installing listener script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/first_package/lib/first_package
+[0.711s] Installing talker script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/first_package/lib/first_package
+[0.711s] writing list of installed files to '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/first_package/install.log'
+[0.749s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/first_package' returned '0': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/first_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/first_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/first_package build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/first_package/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/first_package/install.log --single-version-externally-managed install_data

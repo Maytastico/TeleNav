@@ -1,0 +1,22 @@
+[0.582s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_py_examples': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/bumperbot_py_examples build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/install.log --single-version-externally-managed install_data
+[0.785s] running egg_info
+[0.785s] writing ../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/PKG-INFO
+[0.787s] writing dependency_links to ../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/dependency_links.txt
+[0.787s] writing entry points to ../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/entry_points.txt
+[0.787s] writing requirements to ../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/requires.txt
+[0.787s] writing top-level names to ../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/top_level.txt
+[0.787s] reading manifest file '../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/SOURCES.txt'
+[0.788s] writing manifest file '../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/SOURCES.txt'
+[0.788s] running build
+[0.788s] running build_py
+[0.790s] running install
+[0.790s] running install_lib
+[0.792s] running install_data
+[0.792s] copying package.xml -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples
+[0.792s] running install_egg_info
+[0.793s] removing '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/lib/python3.10/site-packages/bumperbot_py_examples-0.0.0-py3.10.egg-info' (and everything under it)
+[0.793s] Copying ../build/bumperbot_py_examples/bumperbot_py_examples.egg-info to /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/lib/python3.10/site-packages/bumperbot_py_examples-0.0.0-py3.10.egg-info
+[0.794s] running install_scripts
+[0.812s] Installing simple_publisher script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/lib/bumperbot_py_examples
+[0.812s] writing list of installed files to '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/install.log'
+[0.854s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_py_examples' returned '0': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/bumperbot_py_examples build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/install.log --single-version-externally-managed install_data

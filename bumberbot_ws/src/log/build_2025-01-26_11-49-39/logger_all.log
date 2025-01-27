@@ -1,0 +1,177 @@
+[0.097s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.097s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x729188151510>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x729188151060>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x729188151060>>, mixin_verb=('build',))
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.236s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_cpp_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_cpp_examples) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_cpp_examples) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_cpp_examples) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_cpp_examples) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_cpp_examples) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_cpp_examples) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_cpp_examples) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_cpp_examples) by extension 'ros'
+[0.248s] DEBUG:colcon.colcon_core.package_identification:Package 'bumperbot_cpp_examples' with type 'ros.ament_cmake' and name 'bumperbot_cpp_examples'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_py_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_py_examples) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_py_examples) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_py_examples) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_py_examples) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_py_examples) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_py_examples) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_py_examples) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(bumperbot_py_examples) by extension 'ros'
+[0.249s] DEBUG:colcon.colcon_core.package_identification:Package 'bumperbot_py_examples' with type 'ros.ament_python' and name 'bumperbot_py_examples'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.281s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/install
+[0.282s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 305 installed packages in /opt/ros/iron
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_cpp_examples' build argument 'cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_cpp_examples' build argument 'cmake_target' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_cpp_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_cpp_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_cpp_examples' build argument 'cmake_clean_first' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_cpp_examples' build argument 'cmake_force_configure' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_cpp_examples' build argument 'ament_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_cpp_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_cpp_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.320s] DEBUG:colcon.colcon_core.verb:Building package 'bumperbot_cpp_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_cpp_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples', 'merge_install': False, 'path': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_cpp_examples', 'symlink_install': False, 'test_result_base': None}
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_py_examples' build argument 'cmake_args' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_py_examples' build argument 'cmake_target' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_py_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_py_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_py_examples' build argument 'cmake_clean_first' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_py_examples' build argument 'cmake_force_configure' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_py_examples' build argument 'ament_cmake_args' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_py_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'bumperbot_py_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.321s] DEBUG:colcon.colcon_core.verb:Building package 'bumperbot_py_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples', 'merge_install': False, 'path': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_py_examples', 'symlink_install': False, 'test_result_base': None}
+[0.321s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.322s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.322s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_cpp_examples' with build type 'ament_cmake'
+[0.322s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_cpp_examples'
+[0.325s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.325s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.325s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.328s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_py_examples' with build type 'ament_python'
+[0.328s] Level 1:colcon.colcon_core.shell:create_environment_hook('bumperbot_py_examples', 'ament_prefix_path')
+[0.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples/hook/ament_prefix_path.ps1'
+[0.329s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples/hook/ament_prefix_path.dsv'
+[0.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples/hook/ament_prefix_path.sh'
+[0.330s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.331s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/install/bumperbot_py_examples:/opt/ros/iron /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_cpp_examples -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples
+[0.574s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_py_examples'
+[0.575s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.575s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_py_examples': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/bumperbot_py_examples build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/install.log --single-version-externally-managed install_data
+[1.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/install/bumperbot_py_examples:/opt/ros/iron /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_cpp_examples -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples
+[1.118s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/install/bumperbot_py_examples:/opt/ros/iron /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_cpp_examples -- -j6 -l6
+[1.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/install/bumperbot_py_examples:/opt/ros/iron /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_cpp_examples -- -j6 -l6
+[1.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/install/bumperbot_py_examples:/opt/ros/iron /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_cpp_examples
+[1.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/bumperbot_py_examples' returned '0': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/bumperbot_py_examples build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_py_examples/install.log --single-version-externally-managed install_data
+[1.173s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples' for CMake module files
+[1.174s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples' for CMake config files
+[1.174s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/lib'
+[1.174s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/bin'
+[1.175s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/lib/pkgconfig/bumperbot_py_examples.pc'
+[1.175s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/lib/python3.10/site-packages'
+[1.175s] Level 1:colcon.colcon_core.shell:create_environment_hook('bumperbot_py_examples', 'pythonpath')
+[1.175s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples/hook/pythonpath.ps1'
+[1.175s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples/hook/pythonpath.dsv'
+[1.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples/hook/pythonpath.sh'
+[1.177s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/bin'
+[1.177s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bumperbot_py_examples)
+[1.177s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples/package.ps1'
+[1.179s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples/package.dsv'
+[1.180s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples/package.sh'
+[1.181s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples/package.bash'
+[1.181s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/bumperbot_py_examples/package.zsh'
+[1.182s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_py_examples/share/colcon-core/packages/bumperbot_py_examples)
+[1.184s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bumperbot_cpp_examples)
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples' for CMake module files
+[1.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/install/bumperbot_py_examples:/opt/ros/iron /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/build/bumperbot_cpp_examples
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples' for CMake config files
+[1.186s] Level 1:colcon.colcon_core.shell:create_environment_hook('bumperbot_cpp_examples', 'cmake_prefix_path')
+[1.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/hook/cmake_prefix_path.ps1'
+[1.187s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/hook/cmake_prefix_path.dsv'
+[1.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/hook/cmake_prefix_path.sh'
+[1.188s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/bin'
+[1.188s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/lib/pkgconfig/bumperbot_cpp_examples.pc'
+[1.189s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/lib/python3.10/site-packages'
+[1.189s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/bin'
+[1.190s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.ps1'
+[1.191s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.dsv'
+[1.191s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.sh'
+[1.192s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.bash'
+[1.192s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.zsh'
+[1.193s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/colcon-core/packages/bumperbot_cpp_examples)
+[1.194s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bumperbot_cpp_examples)
+[1.194s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples' for CMake module files
+[1.195s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples' for CMake config files
+[1.195s] Level 1:colcon.colcon_core.shell:create_environment_hook('bumperbot_cpp_examples', 'cmake_prefix_path')
+[1.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/hook/cmake_prefix_path.ps1'
+[1.197s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/hook/cmake_prefix_path.dsv'
+[1.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/hook/cmake_prefix_path.sh'
+[1.198s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/bin'
+[1.199s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/lib/pkgconfig/bumperbot_cpp_examples.pc'
+[1.199s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/lib/python3.10/site-packages'
+[1.199s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/bin'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.ps1'
+[1.200s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.dsv'
+[1.200s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.sh'
+[1.201s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.bash'
+[1.201s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.zsh'
+[1.202s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/bumperbot_cpp_examples/share/colcon-core/packages/bumperbot_cpp_examples)
+[1.202s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.202s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.203s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.203s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.208s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.209s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.209s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.222s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.223s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/local_setup.ps1'
+[1.225s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/_local_setup_util_ps1.py'
+[1.227s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/setup.ps1'
+[1.229s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/local_setup.sh'
+[1.230s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/_local_setup_util_sh.py'
+[1.230s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/setup.sh'
+[1.231s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/local_setup.bash'
+[1.232s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/setup.bash'
+[1.234s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/local_setup.zsh'
+[1.234s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/bumberbot_ws/src/install/setup.zsh'
