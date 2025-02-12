@@ -1,0 +1,18 @@
+[0.428s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_interfaces -- -j6 -l6
+[0.457s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.638s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.640s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.644s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.683s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.938s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:229 (message):
+[0.938s]   Packages installing interfaces must include
+[0.939s]   '<member_of_group>rosidl_interface_packages</member_of_group>' in their
+[0.939s]   package.xml
+[0.939s] Call Stack (most recent call first):
+[0.939s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[0.939s] 
+[0.939s] [0m
+[0.940s] -- Configuring incomplete, errors occurred!
+[0.940s] See also "/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_interfaces/CMakeFiles/CMakeOutput.log".
+[0.948s] gmake: *** [Makefile:226: cmake_check_build_system] Fehler 1
+[0.951s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_interfaces -- -j6 -l6

@@ -1,0 +1,7 @@
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_export_dependencies/cmake/ament_export_dependencies.cmake:29 (message):
+  ament_export_dependencies() must be called before ament_package()
+Call Stack (most recent call first):
+  CMakeLists.txt:15 (ament_export_dependencies)
+
+[0m
+gmake: *** [Makefile:226: cmake_check_build_system] Fehler 1

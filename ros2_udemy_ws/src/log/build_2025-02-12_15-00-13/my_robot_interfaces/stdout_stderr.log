@@ -1,0 +1,14 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_export_dependencies/cmake/ament_export_dependencies.cmake:29 (message):
+  ament_export_dependencies() must be called before ament_package()
+Call Stack (most recent call first):
+  CMakeLists.txt:15 (ament_export_dependencies)
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_interfaces/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:226: cmake_check_build_system] Fehler 1

@@ -1,0 +1,25 @@
+[0.854s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/my_robot_controller build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/install.log --single-version-externally-managed install_data
+[1.163s] running egg_info
+[1.164s] writing ../../../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO
+[1.165s] writing dependency_links to ../../../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt
+[1.165s] writing entry points to ../../../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt
+[1.165s] writing requirements to ../../../build/my_robot_controller/my_robot_controller.egg-info/requires.txt
+[1.165s] writing top-level names to ../../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
+[1.168s] reading manifest file '../../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[1.169s] writing manifest file '../../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[1.169s] running build
+[1.169s] running build_py
+[1.170s] copying my_robot_controller/add_two_int_server.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/build/lib/my_robot_controller
+[1.170s] running install
+[1.170s] running install_lib
+[1.171s] copying /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/build/lib/my_robot_controller/add_two_int_server.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[1.172s] byte-compiling /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/add_two_int_server.py to add_two_int_server.cpython-310.pyc
+[1.173s] running install_data
+[1.173s] running install_egg_info
+[1.175s] removing '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.175s] Copying ../../../build/my_robot_controller/my_robot_controller.egg-info to /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info
+[1.176s] running install_scripts
+[1.205s] Installing add_two_ints_server script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/my_robot_controller
+[1.206s] Installing py_node script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/my_robot_controller
+[1.206s] writing list of installed files to '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/install.log'
+[1.270s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller' returned '0': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/my_robot_controller build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/install.log --single-version-externally-managed install_data

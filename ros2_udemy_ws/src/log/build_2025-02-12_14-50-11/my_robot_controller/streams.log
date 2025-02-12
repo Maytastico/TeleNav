@@ -1,0 +1,49 @@
+[1.011s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/my_robot_controller build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/install.log --single-version-externally-managed install_data
+[1.338s] running egg_info
+[1.342s] creating ../build/my_robot_controller/my_robot_controller.egg-info
+[1.342s] writing ../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO
+[1.342s] writing dependency_links to ../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt
+[1.342s] writing entry points to ../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt
+[1.342s] writing requirements to ../build/my_robot_controller/my_robot_controller.egg-info/requires.txt
+[1.342s] writing top-level names to ../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
+[1.342s] writing manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[1.344s] reading manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[1.345s] writing manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[1.345s] running build
+[1.345s] running build_py
+[1.346s] creating /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build
+[1.346s] creating /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib
+[1.346s] creating /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[1.346s] copying my_robot_controller/__init__.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[1.346s] copying my_robot_controller/my_first_node.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[1.347s] copying my_robot_controller/add_two_int_server.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[1.347s] copying my_robot_controller/add_two_ints_client.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[1.347s] copying my_robot_controller/number_counter.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[1.347s] running install
+[1.347s] running install_lib
+[1.349s] creating /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[1.349s] copying /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib/my_robot_controller/__init__.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[1.349s] copying /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib/my_robot_controller/my_first_node.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[1.350s] copying /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib/my_robot_controller/add_two_int_server.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[1.350s] copying /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib/my_robot_controller/add_two_ints_client.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[1.350s] copying /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build/lib/my_robot_controller/number_counter.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[1.350s] byte-compiling /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__init__.py to __init__.cpython-310.pyc
+[1.350s] byte-compiling /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/my_first_node.py to my_first_node.cpython-310.pyc
+[1.351s] byte-compiling /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/add_two_int_server.py to add_two_int_server.cpython-310.pyc
+[1.352s] byte-compiling /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/add_two_ints_client.py to add_two_ints_client.cpython-310.pyc
+[1.352s] byte-compiling /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/number_counter.py to number_counter.cpython-310.pyc
+[1.353s] running install_data
+[1.354s] creating /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/share/ament_index
+[1.354s] creating /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/share/ament_index/resource_index
+[1.355s] creating /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/share/ament_index/resource_index/packages
+[1.355s] copying resource/my_robot_controller -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/share/ament_index/resource_index/packages
+[1.355s] copying package.xml -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/share/my_robot_controller
+[1.355s] running install_egg_info
+[1.358s] Copying ../build/my_robot_controller/my_robot_controller.egg-info to /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info
+[1.360s] running install_scripts
+[1.394s] Installing add_two_number_client script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/my_robot_controller
+[1.394s] Installing add_two_numbers script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/my_robot_controller
+[1.394s] Installing number_counter script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/my_robot_controller
+[1.394s] Installing py_node script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/my_robot_controller
+[1.395s] writing list of installed files to '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/install.log'
+[1.488s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller' returned '0': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/my_robot_controller build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_controller/install.log --single-version-externally-managed install_data
