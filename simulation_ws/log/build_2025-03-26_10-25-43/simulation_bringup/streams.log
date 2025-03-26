@@ -1,0 +1,15 @@
+[0.014s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/simulation_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/simulation_bringup -- -j6 -l6
+[0.057s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/simulation_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/simulation_bringup -- -j6 -l6
+[0.058s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/simulation_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/simulation_bringup
+[0.064s] -- Install configuration: ""
+[0.064s] -- Execute custom install script
+[0.065s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/launch/simple.launch.xml
+[0.065s] [31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+[0.065s]   ament_cmake_symlink_install_directory() can't find
+[0.065s]   '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/simulation_bringup/rviz'
+[0.065s] Call Stack (most recent call first):
+[0.065s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[0.065s]   cmake_install.cmake:46 (include)
+[0.065s] 
+[0.065s] [0m
+[0.066s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/simulation_bringup' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/simulation_bringup

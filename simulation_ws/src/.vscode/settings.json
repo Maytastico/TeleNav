@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages",
+        "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_interfaces/local/lib/python3.10/dist-packages",
+        "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_controller/lib/python3.10/site-packages",
+        "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/local/lib/python3.10/dist-packages",
+        "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages",
+        "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_interfaces/local/lib/python3.10/dist-packages",
+        "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_controller/lib/python3.10/site-packages",
+        "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/local/lib/python3.10/dist-packages",
+        "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

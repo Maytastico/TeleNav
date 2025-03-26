@@ -1,0 +1,1 @@
+/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description/ament_cmake_environment_hooks/local_setup.bash
