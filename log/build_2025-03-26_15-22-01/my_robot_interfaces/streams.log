@@ -1,0 +1,23 @@
+[0.482s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_interfaces -- -j6 -l6
+[0.623s] [ 10%] Built target my_robot_interfaces__rosidl_generator_c
+[0.627s] [ 12%] Built target my_robot_interfaces__cpp
+[0.667s] [ 12%] Built target ament_cmake_python_copy_my_robot_interfaces
+[0.701s] [ 23%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c
+[0.703s] [ 34%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c
+[0.716s] [ 45%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.731s] [ 56%] Built target my_robot_interfaces__rosidl_typesupport_c
+[0.731s] [ 67%] Built target my_robot_interfaces__rosidl_typesupport_cpp
+[0.737s] [ 78%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[0.790s] [ 78%] Built target my_robot_interfaces
+[0.824s] [ 80%] Built target my_robot_interfaces__py
+[0.869s] [ 89%] Built target my_robot_interfaces__rosidl_generator_py
+[0.931s] [ 92%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.932s] [ 96%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.938s] [100%] Built target my_robot_interfaces__rosidl_typesupport_c__pyext
+[1.163s] running egg_info
+[1.163s] writing my_robot_interfaces.egg-info/PKG-INFO
+[1.163s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[1.163s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[1.163s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[1.163s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[1.313s] [100%] Built target ament_cmake_python_build_my_robot_interfaces_egg

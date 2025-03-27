@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:8 (exec_depend):
+  Unknown CMake command "exec_depend".
+
+[0m

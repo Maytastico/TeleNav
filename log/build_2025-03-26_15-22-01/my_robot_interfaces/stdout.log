@@ -1,0 +1,22 @@
+[ 10%] Built target my_robot_interfaces__rosidl_generator_c
+[ 12%] Built target my_robot_interfaces__cpp
+[ 12%] Built target ament_cmake_python_copy_my_robot_interfaces
+[ 23%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c
+[ 34%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c
+[ 45%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 56%] Built target my_robot_interfaces__rosidl_typesupport_c
+[ 67%] Built target my_robot_interfaces__rosidl_typesupport_cpp
+[ 78%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[ 78%] Built target my_robot_interfaces
+[ 80%] Built target my_robot_interfaces__py
+[ 89%] Built target my_robot_interfaces__rosidl_generator_py
+[ 92%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[ 96%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c__pyext
+[100%] Built target my_robot_interfaces__rosidl_typesupport_c__pyext
+running egg_info
+writing my_robot_interfaces.egg-info/PKG-INFO
+writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_my_robot_interfaces_egg

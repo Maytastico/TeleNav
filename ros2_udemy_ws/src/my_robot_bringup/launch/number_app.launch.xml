@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="my_robot_controller" exec="led_panel_node"/>
+    <node pkg="my_robot_controller" exec="battery_node"/>
+</launch>

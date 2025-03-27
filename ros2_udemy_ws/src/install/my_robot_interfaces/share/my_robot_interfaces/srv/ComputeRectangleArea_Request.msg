@@ -1,0 +1,3 @@
+# Requestdata
+float64 lenght# The lenght of the rectangle
+float64 width# The width of the rectangle

@@ -1,0 +1,513 @@
+[0.087s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.087s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73b86e2468c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73b86e33ab60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73b86e33ab60>>, mixin_verb=('build',))
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.218s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/media/ros/fedora/home/maylis/Dokumente/TeleNav'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extension 'ros'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extensions ['cmake', 'python']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extension 'cmake'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extension 'python'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extensions ['python_setup_py']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws) by extension 'python_setup_py'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/build) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/build) ignored
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/log) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/log) ignored
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extension 'ros'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extensions ['cmake', 'python']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extension 'cmake'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extension 'python'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extensions ['python_setup_py']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src) by extension 'python_setup_py'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/build) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/build) ignored
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/cpp_package) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/cpp_package) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/cpp_package) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/cpp_package) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/cpp_package) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/cpp_package) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/cpp_package) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/cpp_package) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/cpp_package) by extension 'ros'
+[0.231s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_udemy_ws/src/cpp_package' with type 'ros.ament_cmake' and name 'cpp_package'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/install) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/install) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/log) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/log) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_bringup) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_bringup) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_bringup) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_bringup) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_bringup) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_bringup) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_bringup) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_bringup) by extension 'ros'
+[0.233s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_udemy_ws/src/my_robot_bringup' with type 'ros.ament_cmake' and name 'my_robot_bringup'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_controller) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_controller) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_controller) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_controller) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_controller) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_controller) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_controller) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_controller) by extension 'ros'
+[0.233s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_udemy_ws/src/my_robot_controller' with type 'ros.ament_python' and name 'my_robot_controller'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_interfaces) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_interfaces) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_interfaces) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_interfaces) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_interfaces) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_interfaces) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_interfaces) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_udemy_ws/src/my_robot_interfaces) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_udemy_ws/src/my_robot_interfaces' with type 'ros.ament_cmake' and name 'my_robot_interfaces'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extension 'ros'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extensions ['cmake', 'python']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extension 'cmake'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extension 'python'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extensions ['python_setup_py']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws) by extension 'python_setup_py'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/build) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/build) ignored
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/install) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/install) ignored
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/log) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/log) ignored
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extension 'ros'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extensions ['cmake', 'python']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extension 'cmake'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extension 'python'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extensions ['python_setup_py']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src) by extension 'python_setup_py'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/build) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/build) ignored
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/install) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/install) ignored
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/log) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/log) ignored
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_bringup) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_bringup) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_bringup) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_bringup) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_bringup) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_bringup) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_bringup) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_bringup) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'turtle_follower_ws/src/turtle_bringup' with type 'ros.ament_cmake' and name 'turtle_bringup'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_spawner) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_spawner) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_spawner) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_spawner) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_spawner) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_spawner) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_spawner) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_spawner) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_follower_ws/src/turtle_spawner) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'turtle_follower_ws/src/turtle_spawner' with type 'ros.ament_python' and name 'turtle_spawner'
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.268s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /media/ros/fedora/home/maylis/Dokumente/TeleNav/install
+[0.269s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/install
+[0.270s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 298 installed packages in /opt/ros/humble
+[0.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'cpp_package' build argument 'cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'cpp_package' build argument 'cmake_target' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'cpp_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'cpp_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'cpp_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'cpp_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'cpp_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'cpp_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'cpp_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.304s] DEBUG:colcon.colcon_core.verb:Building package 'cpp_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/cpp_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package', 'merge_install': False, 'path': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package', 'symlink_install': False, 'test_result_base': None}
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_target' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.304s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller', 'merge_install': False, 'path': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller', 'symlink_install': False, 'test_result_base': None}
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.304s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces', 'merge_install': False, 'path': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'turtle_spawner' build argument 'cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'turtle_spawner' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'turtle_spawner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'turtle_spawner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'turtle_spawner' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'turtle_spawner' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'turtle_spawner' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'turtle_spawner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'turtle_spawner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'turtle_spawner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner', 'merge_install': False, 'path': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_spawner', 'symlink_install': False, 'test_result_base': None}
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup', 'merge_install': False, 'path': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'turtle_bringup' build argument 'cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'turtle_bringup' build argument 'cmake_target' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'turtle_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'turtle_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'turtle_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'turtle_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'turtle_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'turtle_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'turtle_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.306s] DEBUG:colcon.colcon_core.verb:Building package 'turtle_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup', 'merge_install': False, 'path': '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.306s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.307s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.307s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller' with build type 'ament_python'
+[0.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_controller', 'ament_prefix_path')
+[0.309s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/my_robot_controller/hook/ament_prefix_path.ps1'
+[0.310s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/my_robot_controller/hook/ament_prefix_path.dsv'
+[0.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/my_robot_controller/hook/ament_prefix_path.sh'
+[0.311s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.311s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.315s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_spawner' with build type 'ament_python'
+[0.315s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtle_spawner', 'ament_prefix_path')
+[0.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner/hook/ament_prefix_path.ps1'
+[0.316s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner/hook/ament_prefix_path.dsv'
+[0.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner/hook/ament_prefix_path.sh'
+[0.316s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.316s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.320s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package' with build type 'ament_cmake'
+[0.320s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package'
+[0.320s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.320s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.324s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces' with build type 'ament_cmake'
+[0.324s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces'
+[0.324s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.324s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.545s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller'
+[0.546s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.546s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.763s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_spawner'
+[0.764s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.764s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/cpp_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/cpp_package -- -j6 -l6
+[0.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_interfaces -- -j6 -l6
+[0.866s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/cpp_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/cpp_package -- -j6 -l6
+[0.882s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/cpp_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/cpp_package
+[0.893s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_package)
+[0.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/cpp_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/cpp_package
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package' for CMake module files
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package' for CMake config files
+[0.897s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_package', 'cmake_prefix_path')
+[0.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/hook/cmake_prefix_path.ps1'
+[0.898s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/hook/cmake_prefix_path.dsv'
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/hook/cmake_prefix_path.sh'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/lib'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/bin'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/lib/pkgconfig/cpp_package.pc'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/lib/python3.10/site-packages'
+[0.901s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/bin'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.ps1'
+[0.902s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.dsv'
+[0.902s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.sh'
+[0.903s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.bash'
+[0.904s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.zsh'
+[0.905s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/colcon-core/packages/cpp_package)
+[0.905s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_package)
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package' for CMake module files
+[0.906s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package' for CMake config files
+[0.906s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_package', 'cmake_prefix_path')
+[0.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/hook/cmake_prefix_path.ps1'
+[0.906s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/hook/cmake_prefix_path.dsv'
+[0.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/hook/cmake_prefix_path.sh'
+[0.907s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/lib'
+[0.907s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/bin'
+[0.907s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/lib/pkgconfig/cpp_package.pc'
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/lib/python3.10/site-packages'
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/bin'
+[0.908s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.ps1'
+[0.909s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.dsv'
+[0.909s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.sh'
+[0.910s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.bash'
+[0.910s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.zsh'
+[0.911s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/colcon-core/packages/cpp_package)
+[1.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/my_robot_controller build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/install.log --single-version-externally-managed install_data
+[1.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_spawner': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtle_spawner build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/install.log --single-version-externally-managed install_data
+[1.166s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_interfaces -- -j6 -l6
+[1.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_interfaces
+[1.221s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_interfaces)
+[1.221s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces' for CMake module files
+[1.222s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces' for CMake config files
+[1.222s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'cmake_prefix_path')
+[1.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.ps1'
+[1.223s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.dsv'
+[1.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.sh'
+[1.226s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/lib'
+[1.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'ld_library_path_lib')
+[1.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.ps1'
+[1.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_interfaces
+[1.227s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.dsv'
+[1.227s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.sh'
+[1.228s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/bin'
+[1.228s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/lib/pkgconfig/my_robot_interfaces.pc'
+[1.228s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/lib/python3.10/site-packages'
+[1.228s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/bin'
+[1.228s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/package.ps1'
+[1.230s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv'
+[1.233s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/package.sh'
+[1.233s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/package.bash'
+[1.234s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/package.zsh'
+[1.234s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/colcon-core/packages/my_robot_interfaces)
+[1.236s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_interfaces)
+[1.236s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces' for CMake module files
+[1.236s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces' for CMake config files
+[1.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'cmake_prefix_path')
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.ps1'
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.dsv'
+[1.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.sh'
+[1.238s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/lib'
+[1.238s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'ld_library_path_lib')
+[1.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.ps1'
+[1.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.dsv'
+[1.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.sh'
+[1.240s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/bin'
+[1.240s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/lib/pkgconfig/my_robot_interfaces.pc'
+[1.241s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/lib/python3.10/site-packages'
+[1.241s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/bin'
+[1.241s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/package.ps1'
+[1.242s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv'
+[1.242s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/package.sh'
+[1.243s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/package.bash'
+[1.243s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/my_robot_interfaces/package.zsh'
+[1.244s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/share/colcon-core/packages/my_robot_interfaces)
+[1.391s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller' for CMake module files
+[1.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller' returned '0': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/my_robot_controller build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_controller/install.log --single-version-externally-managed install_data
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller' for CMake config files
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib'
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/bin'
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/pkgconfig/my_robot_controller.pc'
+[1.394s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages'
+[1.394s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_controller', 'pythonpath')
+[1.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/my_robot_controller/hook/pythonpath.ps1'
+[1.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/my_robot_controller/hook/pythonpath.dsv'
+[1.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/my_robot_controller/hook/pythonpath.sh'
+[1.395s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/bin'
+[1.395s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_controller)
+[1.396s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/my_robot_controller/package.ps1'
+[1.396s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/my_robot_controller/package.dsv'
+[1.396s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/my_robot_controller/package.sh'
+[1.397s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/my_robot_controller/package.bash'
+[1.397s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/my_robot_controller/package.zsh'
+[1.397s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/share/colcon-core/packages/my_robot_controller)
+[1.397s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup' with build type 'ament_cmake'
+[1.397s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup'
+[1.398s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.398s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.406s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_bringup': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_bringup -- -j6 -l6
+[1.417s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner' for CMake module files
+[1.417s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner' for CMake config files
+[1.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_spawner' returned '0': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtle_spawner build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/install.log --single-version-externally-managed install_data
+[1.419s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib'
+[1.419s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/bin'
+[1.419s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/pkgconfig/turtle_spawner.pc'
+[1.419s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages'
+[1.419s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtle_spawner', 'pythonpath')
+[1.419s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner/hook/pythonpath.ps1'
+[1.420s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner/hook/pythonpath.dsv'
+[1.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner/hook/pythonpath.sh'
+[1.421s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/bin'
+[1.421s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtle_spawner)
+[1.421s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner/package.ps1'
+[1.422s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner/package.dsv'
+[1.422s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner/package.sh'
+[1.423s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner/package.bash'
+[1.423s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner/package.zsh'
+[1.424s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/colcon-core/packages/turtle_spawner)
+[1.424s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_bringup' with build type 'ament_cmake'
+[1.425s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_bringup'
+[1.425s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.425s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_bringup': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_bringup -- -j6 -l6
+[1.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_bringup' returned '0': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_bringup -- -j6 -l6
+[1.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_bringup': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_bringup
+[1.455s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup)
+[1.456s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup' for CMake module files
+[1.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_bringup' returned '0': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_bringup
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup' for CMake config files
+[1.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup', 'cmake_prefix_path')
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.ps1'
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.dsv'
+[1.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.sh'
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/bin'
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/lib/pkgconfig/my_robot_bringup.pc'
+[1.459s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/lib/python3.10/site-packages'
+[1.459s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/bin'
+[1.459s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/package.ps1'
+[1.460s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/package.dsv'
+[1.460s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/package.sh'
+[1.460s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/package.bash'
+[1.461s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/package.zsh'
+[1.461s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/colcon-core/packages/my_robot_bringup)
+[1.462s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup)
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup' for CMake module files
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup' for CMake config files
+[1.462s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup', 'cmake_prefix_path')
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.ps1'
+[1.463s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.dsv'
+[1.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.sh'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/bin'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/lib/pkgconfig/my_robot_bringup.pc'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/lib/python3.10/site-packages'
+[1.466s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/bin'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/package.ps1'
+[1.467s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/package.dsv'
+[1.467s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/package.sh'
+[1.468s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/package.bash'
+[1.468s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/my_robot_bringup/package.zsh'
+[1.469s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup/share/colcon-core/packages/my_robot_bringup)
+[1.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_bringup' returned '0': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_bringup -- -j6 -l6
+[1.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_bringup': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_bringup
+[1.490s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtle_bringup)
+[1.490s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup' for CMake module files
+[1.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_bringup' returned '0': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_bringup
+[1.491s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup' for CMake config files
+[1.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtle_bringup', 'cmake_prefix_path')
+[1.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/hook/cmake_prefix_path.ps1'
+[1.492s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/hook/cmake_prefix_path.dsv'
+[1.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/hook/cmake_prefix_path.sh'
+[1.493s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/bin'
+[1.493s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/lib/pkgconfig/turtle_bringup.pc'
+[1.493s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/lib/python3.10/site-packages'
+[1.493s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/bin'
+[1.494s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/package.ps1'
+[1.494s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/package.dsv'
+[1.495s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/package.sh'
+[1.495s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/package.bash'
+[1.495s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/package.zsh'
+[1.496s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/colcon-core/packages/turtle_bringup)
+[1.496s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtle_bringup)
+[1.496s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup' for CMake module files
+[1.497s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup' for CMake config files
+[1.497s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtle_bringup', 'cmake_prefix_path')
+[1.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/hook/cmake_prefix_path.ps1'
+[1.497s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/hook/cmake_prefix_path.dsv'
+[1.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/hook/cmake_prefix_path.sh'
+[1.498s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/bin'
+[1.498s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/lib/pkgconfig/turtle_bringup.pc'
+[1.498s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/lib/python3.10/site-packages'
+[1.499s] Level 1:colcon.colcon_core.environment:checking '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/bin'
+[1.499s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/package.ps1'
+[1.499s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/package.dsv'
+[1.500s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/package.sh'
+[1.500s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/package.bash'
+[1.500s] INFO:colcon.colcon_core.shell:Creating package script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/turtle_bringup/package.zsh'
+[1.501s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup/share/colcon-core/packages/turtle_bringup)
+[1.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.502s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.506s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.506s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.506s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.523s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.523s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/local_setup.ps1'
+[1.524s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/_local_setup_util_ps1.py'
+[1.525s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/setup.ps1'
+[1.527s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/local_setup.sh'
+[1.527s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/_local_setup_util_sh.py'
+[1.528s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/setup.sh'
+[1.529s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/local_setup.bash'
+[1.530s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/setup.bash'
+[1.531s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/local_setup.zsh'
+[1.532s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/setup.zsh'

@@ -1,0 +1,20 @@
+[0.778s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_spawner': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_spawner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_spawner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/turtle_spawner build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_spawner/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_spawner/install.log --single-version-externally-managed install_data
+[0.969s] running egg_info
+[0.970s] writing ../build/turtle_spawner/turtle_spawner.egg-info/PKG-INFO
+[0.970s] writing dependency_links to ../build/turtle_spawner/turtle_spawner.egg-info/dependency_links.txt
+[0.970s] writing entry points to ../build/turtle_spawner/turtle_spawner.egg-info/entry_points.txt
+[0.970s] writing requirements to ../build/turtle_spawner/turtle_spawner.egg-info/requires.txt
+[0.970s] writing top-level names to ../build/turtle_spawner/turtle_spawner.egg-info/top_level.txt
+[0.971s] reading manifest file '../build/turtle_spawner/turtle_spawner.egg-info/SOURCES.txt'
+[0.972s] writing manifest file '../build/turtle_spawner/turtle_spawner.egg-info/SOURCES.txt'
+[0.972s] running build
+[0.972s] running build_py
+[0.972s] running install
+[0.973s] running install_lib
+[0.974s] running install_data
+[0.974s] running install_egg_info
+[0.976s] removing '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_spawner/lib/python3.10/site-packages/turtle_spawner-0.0.0-py3.10.egg-info' (and everything under it)
+[0.976s] Copying ../build/turtle_spawner/turtle_spawner.egg-info to /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_spawner/lib/python3.10/site-packages/turtle_spawner-0.0.0-py3.10.egg-info
+[0.976s] running install_scripts
+[0.995s] Installing spawner script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_spawner/lib/turtle_spawner
+[0.995s] writing list of installed files to '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_spawner/install.log'

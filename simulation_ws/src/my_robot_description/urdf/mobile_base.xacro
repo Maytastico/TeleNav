@@ -31,16 +31,7 @@
 
 
 
-    <link name="base_footprint">
-        <visual>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-            <geometry>
-                <box size="0 0 0"/>
-            </geometry>
-            <material name="green"/>
-            <xacro:box_inertia mass="0" lenght="0" width="0" height="0" xyz_origin="0 0 0" rpy_orgin="0 0 0"/>
-        </visual>
-    </link>
+    <link name="base_footprint"/>
 
     <joint name="footprint_to_base_link_joint" type="fixed">
         <parent link="base_footprint"/>
@@ -105,4 +96,31 @@
         <axis xyz="0 1 0"/>
     </joint>
 
+    <gazebo reference="right_wheel_link">
+        <mu1>0.9</mu1>
+        <mu2>0.9</mu2>
+    </gazebo>
+    <gazebo reference="left_wheel_link">
+        <mu1>0.9</mu1>
+        <mu2>0.9</mu2>
+    </gazebo>
+    <gazebo reference="caster_wheel_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+    </gazebo>
+    <gazebo reference="base_link">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+    <gazebo reference="right_wheel_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    <gazebo reference="left_wheel_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    <gazebo reference="base_footprint">
+        <material>Gazebo/Green</material>
+    </gazebo>
+    <gazebo reference="caster_wheel_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
 </robot>

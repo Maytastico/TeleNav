@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/my_first_cpp_node.dir/src/my_first_cpp_note.cpp.o[0m
+[100%] [32m[1mLinking CXX executable my_first_cpp_node[0m
+[100%] Built target my_first_cpp_node
+-- Install configuration: ""
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/lib/cpp_package/my_first_cpp_node
+-- Set runtime path of "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/lib/cpp_package/my_first_cpp_node" to ""
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/ament_index/resource_index/package_run_dependencies/cpp_package
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/ament_index/resource_index/parent_prefix_path/cpp_package
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/environment/ament_prefix_path.sh
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/environment/ament_prefix_path.dsv
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/environment/path.sh
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/environment/path.dsv
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/local_setup.bash
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/local_setup.sh
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/local_setup.zsh
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/local_setup.dsv
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.dsv
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/ament_index/resource_index/packages/cpp_package
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/cmake/cpp_packageConfig.cmake
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/cmake/cpp_packageConfig-version.cmake
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package/share/cpp_package/package.xml

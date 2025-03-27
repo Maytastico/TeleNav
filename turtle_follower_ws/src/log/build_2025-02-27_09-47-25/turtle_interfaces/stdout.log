@@ -1,0 +1,17 @@
+[  5%] [32mBuilding C object CMakeFiles/turtle_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtle_interfaces/msg/detail/turtle_position__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/turtle_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtle_interfaces/msg/detail/turtles_alive__functions.c.o[0m
+[  7%] Built target turtle_interfaces__cpp
+[  7%] Built target ament_cmake_python_copy_turtle_interfaces
+[ 12%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtle_interfaces/msg/turtle_position__type_support.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtle_interfaces/msg/detail/dds_fastrtps/turtle_position__type_support.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtle_interfaces/msg/detail/turtles_alive__type_support.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtle_interfaces/msg/turtles_alive__type_support.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtle_interfaces/msg/detail/turtle_position__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtle_interfaces/msg/detail/dds_fastrtps/turtles_alive__type_support.cpp.o[0m
+running egg_info
+writing turtle_interfaces.egg-info/PKG-INFO
+writing dependency_links to turtle_interfaces.egg-info/dependency_links.txt
+writing top-level names to turtle_interfaces.egg-info/top_level.txt
+reading manifest file 'turtle_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'turtle_interfaces.egg-info/SOURCES.txt'
+[ 23%] Built target ament_cmake_python_build_turtle_interfaces_egg

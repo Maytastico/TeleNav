@@ -1,0 +1,89 @@
+[0.137s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws']
+[0.138s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7c3571cde7d0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7c3571cddc90>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7c3571cddc90>>, mixin_verb=('list',))
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.364s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extension 'ignore'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extension 'ignore_ament_install'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extensions ['colcon_pkg']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extension 'colcon_pkg'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extensions ['colcon_meta']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extension 'colcon_meta'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extensions ['ros']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extension 'ros'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extensions ['cmake', 'python']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extension 'cmake'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extension 'python'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extensions ['python_setup_py']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws) by extension 'python_setup_py'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/build) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/build) ignored
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/log) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/log) ignored
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extension 'ignore_ament_install'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extensions ['colcon_pkg']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extension 'colcon_pkg'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extensions ['colcon_meta']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extension 'colcon_meta'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extensions ['ros']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extension 'ros'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extensions ['cmake', 'python']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extension 'cmake'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extension 'python'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extensions ['python_setup_py']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src) by extension 'python_setup_py'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build) by extension 'ignore'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build) ignored
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package) by extensions ['ignore', 'ignore_ament_install']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package) by extension 'ignore'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package) by extension 'ignore_ament_install'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package) by extensions ['colcon_pkg']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package) by extension 'colcon_pkg'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package) by extensions ['colcon_meta']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package) by extension 'colcon_meta'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package) by extensions ['ros']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package) by extension 'ros'
+[0.387s] DEBUG:colcon.colcon_core.package_identification:Package '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/cpp_package' with type 'ros.ament_cmake' and name 'cpp_package'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/log) by extension 'ignore'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/log) ignored
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup) by extension 'ignore'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup) by extension 'ignore_ament_install'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup) by extensions ['colcon_pkg']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup) by extension 'colcon_pkg'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup) by extensions ['colcon_meta']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup) by extension 'colcon_meta'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup) by extensions ['ros']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup) by extension 'ros'
+[0.389s] DEBUG:colcon.colcon_core.package_identification:Package '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup' with type 'ros.ament_cmake' and name 'my_robot_bringup'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller) by extension 'ignore'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller) by extension 'ignore_ament_install'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller) by extensions ['colcon_pkg']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller) by extension 'colcon_pkg'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller) by extensions ['colcon_meta']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller) by extension 'colcon_meta'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller) by extensions ['ros']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller) by extension 'ros'
+[0.391s] DEBUG:colcon.colcon_core.package_identification:Package '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_controller' with type 'ros.ament_python' and name 'my_robot_controller'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces) by extension 'ignore'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces) by extension 'ignore_ament_install'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces) by extensions ['colcon_pkg']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces) by extension 'colcon_pkg'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces) by extensions ['colcon_meta']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces) by extension 'colcon_meta'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces) by extensions ['ros']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces) by extension 'ros'
+[0.393s] DEBUG:colcon.colcon_core.package_identification:Package '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_interfaces' with type 'ros.ament_cmake' and name 'my_robot_interfaces'
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

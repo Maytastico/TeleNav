@@ -9,8 +9,24 @@ endif()
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY urdf launch meshes rviz
+  DIRECTORY urdf urdf_course launch meshes rviz
   DESTINATION share/${PROJECT_NAME}/
 )
 
+find_package(xacro REQUIRED)
+
+add_custom_command(
+  OUTPUT ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf
+  COMMAND xacro ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf.xacro -o ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf
+  DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf.xacro
+)
+
+add_custom_target(generate_urdf ALL
+  DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf
+)
+
+install(
+  FILES ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf
+  DESTINATION share/${PROJECT_NAME}/urdf
+)
 ament_package()

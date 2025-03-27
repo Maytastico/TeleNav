@@ -1,0 +1,23 @@
+running egg_info
+writing ../../../build/turtle_spawner/turtle_spawner.egg-info/PKG-INFO
+writing dependency_links to ../../../build/turtle_spawner/turtle_spawner.egg-info/dependency_links.txt
+writing entry points to ../../../build/turtle_spawner/turtle_spawner.egg-info/entry_points.txt
+writing requirements to ../../../build/turtle_spawner/turtle_spawner.egg-info/requires.txt
+writing top-level names to ../../../build/turtle_spawner/turtle_spawner.egg-info/top_level.txt
+reading manifest file '../../../build/turtle_spawner/turtle_spawner.egg-info/SOURCES.txt'
+writing manifest file '../../../build/turtle_spawner/turtle_spawner.egg-info/SOURCES.txt'
+running build
+running build_py
+copying turtle_spawner/spawner.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/build/lib/turtle_spawner
+running install
+running install_lib
+copying /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/build/lib/turtle_spawner/spawner.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages/turtle_spawner
+byte-compiling /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages/turtle_spawner/spawner.py to spawner.cpython-310.pyc
+running install_data
+copying package.xml -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/share/turtle_spawner
+running install_egg_info
+removing '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages/turtle_spawner-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../../build/turtle_spawner/turtle_spawner.egg-info to /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages/turtle_spawner-0.0.0-py3.10.egg-info
+running install_scripts
+Installing spawner script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/turtle_spawner
+writing list of installed files to '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/install.log'

@@ -1,0 +1,8 @@
+[0.009s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_bringup': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_bringup
+[0.015s] [31mCMake Error at CMakeLists.txt:14:
+[0.015s]   Parse error.  Expected a command name, got unquoted argument with text
+[0.015s]   "install{DIRECTORY".
+[0.015s] 
+[0.016s] [0m
+[0.017s] -- Configuring incomplete, errors occurred!
+[0.017s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/build/my_robot_bringup' returned '1': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller:/opt/ros/humble PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_bringup

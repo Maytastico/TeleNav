@@ -1,0 +1,22 @@
+running egg_info
+writing ../build/turtle_controller/turtle_controller.egg-info/PKG-INFO
+writing dependency_links to ../build/turtle_controller/turtle_controller.egg-info/dependency_links.txt
+writing entry points to ../build/turtle_controller/turtle_controller.egg-info/entry_points.txt
+writing requirements to ../build/turtle_controller/turtle_controller.egg-info/requires.txt
+writing top-level names to ../build/turtle_controller/turtle_controller.egg-info/top_level.txt
+reading manifest file '../build/turtle_controller/turtle_controller.egg-info/SOURCES.txt'
+writing manifest file '../build/turtle_controller/turtle_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying turtle_controller/turtle_controller.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_controller/build/lib/turtle_controller
+running install
+running install_lib
+copying /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_controller/build/lib/turtle_controller/turtle_controller.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_controller/lib/python3.10/site-packages/turtle_controller
+byte-compiling /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_controller/lib/python3.10/site-packages/turtle_controller/turtle_controller.py to turtle_controller.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_controller/lib/python3.10/site-packages/turtle_controller-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/turtle_controller/turtle_controller.egg-info to /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_controller/lib/python3.10/site-packages/turtle_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing turtle_controller script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_controller/lib/turtle_controller
+writing list of installed files to '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_controller/install.log'

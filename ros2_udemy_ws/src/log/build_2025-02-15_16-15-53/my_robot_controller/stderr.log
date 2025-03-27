@@ -1,0 +1,5 @@
+  File "/media/ros/fedora/home/maylis/Dokumente/TeleNav/ros2_udemy_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/compute_rectangle_area_service.py", line 3
+    from my_robot_interfaces.srv import 
+                                        ^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from turtle_interfaces/srv/Catch.srv
+// generated code does not contain a copyright notice
+
+#include "turtle_interfaces/msg/TurtlePosition.idl"
+
+module turtle_interfaces {
+  module srv {
+    struct Catch_Request {
+      turtle_interfaces::msg::TurtlePosition own_turtle;
+
+      turtle_interfaces::msg::TurtlePosition catch_turtle;
+    };
+    struct Catch_Response {
+      boolean success;
+    };
+  };
+};

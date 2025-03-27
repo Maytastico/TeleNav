@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_robot_interfaces/srv/ComputeRectangleArea.srv
+// generated code does not contain a copyright notice
+
+
+module my_robot_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Requestdata")
+    struct ComputeRectangleArea_Request {
+      @verbatim (language="comment", text=
+        "The lenght of the rectangle")
+      double lenght;
+
+      @verbatim (language="comment", text=
+        "The width of the rectangle")
+      double width;
+    };
+    @verbatim (language="comment", text=
+      "Responsedata")
+    struct ComputeRectangleArea_Response {
+      double area;
+    };
+  };
+};

@@ -1,0 +1,4 @@
+/parameter_publisher_node:
+  ros__parameters:
+    number: 5
+    timer_period: 1.7

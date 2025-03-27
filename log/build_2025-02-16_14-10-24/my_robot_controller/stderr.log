@@ -1,0 +1,5 @@
+  File "/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/battery_node.py", line 4
+    from 
+         ^
+SyntaxError: invalid syntax
+

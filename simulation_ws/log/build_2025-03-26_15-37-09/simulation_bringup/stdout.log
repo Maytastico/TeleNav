@@ -1,0 +1,19 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/launch/course_simple.launch.xml
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/launch/simple.launch.xml
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/ament_index/resource_index/package_run_dependencies/simulation_bringup
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/ament_index/resource_index/parent_prefix_path/simulation_bringup
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/environment/ament_prefix_path.sh
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/environment/ament_prefix_path.dsv
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/environment/path.sh
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/environment/path.dsv
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/local_setup.bash
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/local_setup.sh
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/local_setup.zsh
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/local_setup.dsv
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/package.dsv
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/ament_index/resource_index/packages/simulation_bringup
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/cmake/simulation_bringupConfig.cmake
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/cmake/simulation_bringupConfig-version.cmake
+-- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/simulation_bringup/share/simulation_bringup/package.xml

@@ -1,0 +1,83 @@
+[  5%] [32mBuilding C object CMakeFiles/turtle_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtle_interfaces/msg/detail/turtle_position__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/turtle_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtle_interfaces/msg/detail/turtles_alive__functions.c.o[0m
+[  7%] Built target turtle_interfaces__cpp
+[  7%] Built target ament_cmake_python_copy_turtle_interfaces
+In file included from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_c/turtle_interfaces/msg/detail/turtles_alive__struct.h:22[m[K,
+                 from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_c/turtle_interfaces/msg/detail/turtles_alive__functions.h:19[m[K,
+                 from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_c/turtle_interfaces/msg/detail/turtles_alive__functions.c:4[m[K:
+[01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_c/turtle_interfaces/msg/detail/turtle_position__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Kturtle_interfaces/msg/detail/string__struct.h: Datei oder Verzeichnis nicht gefunden
+   22 | #include [01;31m[K"turtle_interfaces/msg/detail/string__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_c/turtle_interfaces/msg/detail/turtle_position__functions.h:19[m[K,
+                 from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_c/turtle_interfaces/msg/detail/turtle_position__functions.c:4[m[K:
+[01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_c/turtle_interfaces/msg/detail/turtle_position__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Kturtle_interfaces/msg/detail/string__struct.h: Datei oder Verzeichnis nicht gefunden
+   22 | #include [01;31m[K"turtle_interfaces/msg/detail/string__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/turtle_interfaces__rosidl_generator_c.dir/build.make:135: CMakeFiles/turtle_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtle_interfaces/msg/detail/turtles_alive__functions.c.o] Fehler 1
+gmake[2]: *** Auf noch nicht beendete Prozesse wird gewartet …
+gmake[2]: *** [CMakeFiles/turtle_interfaces__rosidl_generator_c.dir/build.make:121: CMakeFiles/turtle_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtle_interfaces/msg/detail/turtle_position__functions.c.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/turtle_interfaces__rosidl_generator_c.dir/all] Fehler 2
+gmake[1]: *** Auf noch nicht beendete Prozesse wird gewartet …
+[ 12%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtle_interfaces/msg/turtle_position__type_support.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtle_interfaces/msg/detail/dds_fastrtps/turtle_position__type_support.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtle_interfaces/msg/detail/turtles_alive__type_support.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtle_interfaces/msg/turtles_alive__type_support.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtle_interfaces/msg/detail/turtle_position__type_support.cpp.o[0m
+In file included from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_cpp/turtle_interfaces/msg/detail/turtles_alive__struct.hpp:20[m[K,
+                 from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_typesupport_introspection_cpp/turtle_interfaces/msg/detail/turtles_alive__type_support.cpp:12[m[K:
+[01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_cpp/turtle_interfaces/msg/detail/turtle_position__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kturtle_interfaces/msg/detail/string__struct.hpp: Datei oder Verzeichnis nicht gefunden
+   20 | #include [01;31m[K"turtle_interfaces/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_typesupport_introspection_cpp/turtle_interfaces/msg/detail/turtle_position__type_support.cpp:12[m[K:
+[01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_cpp/turtle_interfaces/msg/detail/turtle_position__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kturtle_interfaces/msg/detail/string__struct.hpp: Datei oder Verzeichnis nicht gefunden
+   20 | #include [01;31m[K"turtle_interfaces/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/turtle_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:98: CMakeFiles/turtle_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtle_interfaces/msg/detail/turtle_position__type_support.cpp.o] Fehler 1
+gmake[2]: *** Auf noch nicht beendete Prozesse wird gewartet …
+gmake[2]: *** [CMakeFiles/turtle_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:112: CMakeFiles/turtle_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtle_interfaces/msg/detail/turtles_alive__type_support.cpp.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/turtle_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Fehler 2
+[ 23%] [32mBuilding CXX object CMakeFiles/turtle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtle_interfaces/msg/detail/dds_fastrtps/turtles_alive__type_support.cpp.o[0m
+In file included from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_typesupport_cpp/turtle_interfaces/msg/turtle_position__type_support.cpp:7[m[K:
+[01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_cpp/turtle_interfaces/msg/detail/turtle_position__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kturtle_interfaces/msg/detail/string__struct.hpp: Datei oder Verzeichnis nicht gefunden
+   20 | #include [01;31m[K"turtle_interfaces/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/turtle_interfaces__rosidl_typesupport_cpp.dir/build.make:90: CMakeFiles/turtle_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtle_interfaces/msg/turtle_position__type_support.cpp.o] Fehler 1
+gmake[2]: *** Auf noch nicht beendete Prozesse wird gewartet …
+In file included from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_typesupport_fastrtps_cpp/turtle_interfaces/msg/detail/turtle_position__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_typesupport_fastrtps_cpp/turtle_interfaces/msg/detail/dds_fastrtps/turtle_position__type_support.cpp:4[m[K:
+[01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_cpp/turtle_interfaces/msg/detail/turtle_position__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kturtle_interfaces/msg/detail/string__struct.hpp: Datei oder Verzeichnis nicht gefunden
+   20 | #include [01;31m[K"turtle_interfaces/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/turtle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:98: CMakeFiles/turtle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtle_interfaces/msg/detail/dds_fastrtps/turtle_position__type_support.cpp.o] Fehler 1
+gmake[2]: *** Auf noch nicht beendete Prozesse wird gewartet …
+In file included from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_cpp/turtle_interfaces/msg/detail/turtles_alive__struct.hpp:20[m[K,
+                 from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_typesupport_cpp/turtle_interfaces/msg/turtles_alive__type_support.cpp:7[m[K:
+[01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_cpp/turtle_interfaces/msg/detail/turtle_position__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kturtle_interfaces/msg/detail/string__struct.hpp: Datei oder Verzeichnis nicht gefunden
+   20 | #include [01;31m[K"turtle_interfaces/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/turtle_interfaces__rosidl_typesupport_cpp.dir/build.make:104: CMakeFiles/turtle_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtle_interfaces/msg/turtles_alive__type_support.cpp.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/turtle_interfaces__rosidl_typesupport_cpp.dir/all] Fehler 2
+In file included from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_cpp/turtle_interfaces/msg/detail/turtles_alive__struct.hpp:20[m[K,
+                 from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_typesupport_fastrtps_cpp/turtle_interfaces/msg/detail/turtles_alive__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_typesupport_fastrtps_cpp/turtle_interfaces/msg/detail/dds_fastrtps/turtles_alive__type_support.cpp:4[m[K:
+[01m[K/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_interfaces/rosidl_generator_cpp/turtle_interfaces/msg/detail/turtle_position__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kturtle_interfaces/msg/detail/string__struct.hpp: Datei oder Verzeichnis nicht gefunden
+   20 | #include [01;31m[K"turtle_interfaces/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/turtle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:112: CMakeFiles/turtle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtle_interfaces/msg/detail/dds_fastrtps/turtles_alive__type_support.cpp.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/turtle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Fehler 2
+running egg_info
+writing turtle_interfaces.egg-info/PKG-INFO
+writing dependency_links to turtle_interfaces.egg-info/dependency_links.txt
+writing top-level names to turtle_interfaces.egg-info/top_level.txt
+reading manifest file 'turtle_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'turtle_interfaces.egg-info/SOURCES.txt'
+[ 23%] Built target ament_cmake_python_build_turtle_interfaces_egg
+gmake: *** [Makefile:146: all] Fehler 2

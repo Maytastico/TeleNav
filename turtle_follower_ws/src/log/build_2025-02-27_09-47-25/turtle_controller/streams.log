@@ -1,0 +1,19 @@
+[0.773s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_controller': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/turtle_controller build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_controller/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_controller/install.log --single-version-externally-managed install_data
+[0.966s] running egg_info
+[0.967s] writing ../build/turtle_controller/turtle_controller.egg-info/PKG-INFO
+[0.968s] writing dependency_links to ../build/turtle_controller/turtle_controller.egg-info/dependency_links.txt
+[0.968s] writing entry points to ../build/turtle_controller/turtle_controller.egg-info/entry_points.txt
+[0.968s] writing requirements to ../build/turtle_controller/turtle_controller.egg-info/requires.txt
+[0.968s] writing top-level names to ../build/turtle_controller/turtle_controller.egg-info/top_level.txt
+[0.969s] reading manifest file '../build/turtle_controller/turtle_controller.egg-info/SOURCES.txt'
+[0.970s] writing manifest file '../build/turtle_controller/turtle_controller.egg-info/SOURCES.txt'
+[0.970s] running build
+[0.970s] running build_py
+[0.970s] running install
+[0.971s] running install_lib
+[0.973s] running install_data
+[0.973s] running install_egg_info
+[0.976s] removing '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_controller/lib/python3.10/site-packages/turtle_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.976s] Copying ../build/turtle_controller/turtle_controller.egg-info to /media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/install/turtle_controller/lib/python3.10/site-packages/turtle_controller-0.0.0-py3.10.egg-info
+[0.976s] running install_scripts
+[0.993s] writing list of installed files to '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/build/turtle_controller/install.log'

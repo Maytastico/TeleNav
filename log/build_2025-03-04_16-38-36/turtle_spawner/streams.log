@@ -1,0 +1,21 @@
+[0.855s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_spawner': CMAKE_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtle_spawner build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/install.log --single-version-externally-managed install_data
+[1.159s] running egg_info
+[1.160s] writing ../../../build/turtle_spawner/turtle_spawner.egg-info/PKG-INFO
+[1.161s] writing dependency_links to ../../../build/turtle_spawner/turtle_spawner.egg-info/dependency_links.txt
+[1.162s] writing entry points to ../../../build/turtle_spawner/turtle_spawner.egg-info/entry_points.txt
+[1.162s] writing requirements to ../../../build/turtle_spawner/turtle_spawner.egg-info/requires.txt
+[1.162s] writing top-level names to ../../../build/turtle_spawner/turtle_spawner.egg-info/top_level.txt
+[1.163s] reading manifest file '../../../build/turtle_spawner/turtle_spawner.egg-info/SOURCES.txt'
+[1.164s] writing manifest file '../../../build/turtle_spawner/turtle_spawner.egg-info/SOURCES.txt'
+[1.165s] running build
+[1.165s] running build_py
+[1.165s] running install
+[1.165s] running install_lib
+[1.166s] running install_data
+[1.167s] running install_egg_info
+[1.170s] removing '/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages/turtle_spawner-0.0.0-py3.10.egg-info' (and everything under it)
+[1.170s] Copying ../../../build/turtle_spawner/turtle_spawner.egg-info to /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages/turtle_spawner-0.0.0-py3.10.egg-info
+[1.172s] running install_scripts
+[1.199s] Installing spawner script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/turtle_spawner
+[1.200s] writing list of installed files to '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/install.log'
+[1.237s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/turtle_follower_ws/src/turtle_spawner' returned '0': CMAKE_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_interfaces:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_bringup:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/cpp_package PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/turtle_spawner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtle_spawner build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_spawner/install.log --single-version-externally-managed install_data

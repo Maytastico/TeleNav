@@ -24,6 +24,10 @@ setup(
             "add_two_number_client = my_robot_controller.add_two_ints_client:main",
             "number_counter = my_robot_controller.number_counter:main",
             "hw_status_publisher = my_robot_controller.hardware_status:main",
+            "compute_rectangle_service = my_robot_controller.compute_rectangle_area_service:main",
+            "battery_node = my_robot_controller.battery_node:main",
+            "led_panel_node = my_robot_controller.led_panel_node:main",
+            "parameter_publisher = my_robot_controller.parameter_publisher:main",
         ],
     },
 )

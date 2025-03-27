@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from turtle_interfaces/msg/TurtlesAlive.msg
+// generated code does not contain a copyright notice
+
+#include "turtle_interfaces/msg/TurtlePosition.idl"
+
+module turtle_interfaces {
+  module msg {
+    struct TurtlesAlive {
+      sequence<turtle_interfaces::msg::TurtlePosition> turtles;
+    };
+  };
+};

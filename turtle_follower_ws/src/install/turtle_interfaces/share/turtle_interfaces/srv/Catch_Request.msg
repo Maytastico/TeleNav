@@ -1,0 +1,2 @@
+TurtlePosition own_turtle
+TurtlePosition catch_turtle
