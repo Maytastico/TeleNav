@@ -446,3 +446,15 @@ ros2 launch urdf_test display.launch.py
 Create a folder where you project needs to be put in.
 Then create a src folder inside.
 Then by running `colcon build` all the nessesary folder and files are created.
+
+# Install folders
+When adding folders in one of your project different projects need access to you need to add 
+the folder name to the `CMakeList.txt` file.
+
+Example:
+```make
+install(
+  DIRECTORY launch config new_foldername
+  DESTINATION share/${PROJECT_NAME}/
+)
+``` 

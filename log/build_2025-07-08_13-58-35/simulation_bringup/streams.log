@@ -1,0 +1,43 @@
+[0.046s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/simulation_bringup': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:/opt/ros/humble /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/simulation_bringup -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup
+[0.249s] -- The C compiler identification is GNU 11.4.0
+[0.429s] -- The CXX compiler identification is GNU 11.4.0
+[0.474s] -- Detecting C compiler ABI info
+[0.689s] -- Detecting C compiler ABI info - done
+[0.712s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.712s] -- Detecting C compile features
+[0.712s] -- Detecting C compile features - done
+[0.729s] -- Detecting CXX compiler ABI info
+[0.978s] -- Detecting CXX compiler ABI info - done
+[1.040s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.040s] -- Detecting CXX compile features
+[1.041s] -- Detecting CXX compile features - done
+[1.052s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.528s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.050s] -- Configuring done
+[2.062s] -- Generating done
+[2.066s] -- Build files have been written to: /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/simulation_bringup
+[2.083s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/simulation_bringup' returned '0': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:/opt/ros/humble /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/simulation_bringup -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup
+[2.087s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/simulation_bringup': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/simulation_bringup -- -j6 -l6
+[2.154s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/simulation_bringup' returned '0': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/simulation_bringup -- -j6 -l6
+[2.158s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/simulation_bringup': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/simulation_bringup
+[2.166s] -- Install configuration: ""
+[2.167s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/launch
+[2.167s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/launch/simple.launch.xml
+[2.167s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/launch/course_simple.launch.xml
+[2.167s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/launch/simulation_gazebo_launch.xml
+[2.168s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/ament_index/resource_index/package_run_dependencies/simulation_bringup
+[2.168s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/ament_index/resource_index/parent_prefix_path/simulation_bringup
+[2.168s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/environment/ament_prefix_path.sh
+[2.169s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/environment/ament_prefix_path.dsv
+[2.169s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/environment/path.sh
+[2.170s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/environment/path.dsv
+[2.170s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/local_setup.bash
+[2.170s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/local_setup.sh
+[2.170s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/local_setup.zsh
+[2.171s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/local_setup.dsv
+[2.172s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/package.dsv
+[2.172s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/ament_index/resource_index/packages/simulation_bringup
+[2.173s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/cmake/simulation_bringupConfig.cmake
+[2.173s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/cmake/simulation_bringupConfig-version.cmake
+[2.173s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/install/simulation_bringup/share/simulation_bringup/package.xml
+[2.178s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/simulation_bringup' returned '0': AMENT_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/simulation_bringup

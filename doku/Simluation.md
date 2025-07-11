@@ -7,6 +7,14 @@ We will simulate all physics as well as the work with the simulation program whi
 Inside Gazebo we can define plugins which will simulate the hardware.
 These Plugins let uns interact with the robot. So we can control the wheels and get date from the sensors.
 
+## Comands
+
+By default ros2 and gazebo are not communicating with eatchother. To see the topics of gazebo you need
+to use ``gz topic -l``
+Then you can build a bridge between ros2 and gazebo.
+
+
+
 ## Launching
 When launching gazebo inside a launch file the `setup.bash` needs to be sourced
 

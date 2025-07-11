@@ -16,17 +16,17 @@ install(
 find_package(xacro REQUIRED)
 
 add_custom_command(
-  OUTPUT ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf
-  COMMAND xacro ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf.xacro -o ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf
-  DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf.xacro
+  OUTPUT ${CMAKE_CURRENT_SOURCE_DIR}/urdf_cource/robot.urdf
+  COMMAND xacro ${CMAKE_CURRENT_SOURCE_DIR}/urdf_cource/robot.urdf.xacro -o ${CMAKE_CURRENT_SOURCE_DIR}/urdf_cource/robot.urdf
+  DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/urdf_cource/robot.urdf.xacro
 )
 
 add_custom_target(generate_urdf ALL
-  DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf
+  DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/urdf_cource/robot.urdf
 )
 
 install(
-  FILES ${CMAKE_CURRENT_SOURCE_DIR}/urdf/robot.urdf
-  DESTINATION share/${PROJECT_NAME}/urdf
+  FILES ${CMAKE_CURRENT_SOURCE_DIR}/urdf_cource/robot.urdf
+  DESTINATION share/${PROJECT_NAME}/urdf_cource
 )
 ament_package()

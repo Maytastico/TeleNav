@@ -1,0 +1,45 @@
+[0.011s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/my_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description
+[0.023s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.129s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.142s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[0.199s] -- Configuring done
+[0.204s] -- Generating done
+[0.208s] -- Build files have been written to: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description
+[0.214s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/my_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description
+[0.215s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description -- -j6 -l6
+[0.257s] [100%] Built target generate_urdf
+[0.270s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description -- -j6 -l6
+[0.279s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description
+[0.284s] -- Install configuration: ""
+[0.285s] -- Execute custom install script
+[0.286s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro
+[0.286s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base.xacro
+[0.286s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//urdf/mosro.xacro
+[0.286s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//urdf/robot.urdf
+[0.286s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//urdf/robot.urdf.xacro
+[0.287s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//urdf_course/common_properties.xacro
+[0.287s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//urdf_course/mobile_base.xacro
+[0.287s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//urdf_course/my_robot.urdf.xacro
+[0.287s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//urdf_course/robot.urdf
+[0.287s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//launch/course.launch.xml
+[0.287s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.xml
+[0.287s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//launch/mosro.launch copy.xml
+[0.288s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//meshes/mosro.stl
+[0.288s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description//rviz/robot.rviz
+[0.288s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/urdf/robot.urdf
+[0.288s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[0.288s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[0.289s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[0.289s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[0.289s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+[0.289s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[0.289s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+[0.289s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+[0.289s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[0.289s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[0.290s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/package.dsv
+[0.297s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[0.298s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[0.298s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[0.298s] -- Up-to-date symlink: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/install/my_robot_description/share/my_robot_description/package.xml
+[0.300s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/build/my_robot_description
