@@ -1,0 +1,30 @@
+[0.041s] Invoking command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/turtlebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/turtlebot_description -- -j4 -l4
+[0.170s] Invoked command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/turtlebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/turtlebot_description -- -j4 -l4
+[0.170s] Invoking command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/turtlebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/turtlebot_description
+[0.192s] -- Install configuration: ""
+[0.194s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//urdf
+[0.195s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//urdf/mobile_base_gazebo.xacro
+[0.196s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//urdf/common_properties.xacro
+[0.197s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//urdf/my_robot.urdf.xacro
+[0.197s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//urdf/mobile_base.xacro
+[0.200s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//launch
+[0.200s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//launch/display.launch.xml
+[0.201s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//launch/display.launch.py
+[0.201s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//rviz
+[0.201s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//rviz/urdf_config.rviz
+[0.201s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/ament_index/resource_index/package_run_dependencies/turtlebot_description
+[0.202s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/ament_index/resource_index/parent_prefix_path/turtlebot_description
+[0.202s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/environment/ament_prefix_path.sh
+[0.204s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/environment/ament_prefix_path.dsv
+[0.204s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/environment/path.sh
+[0.204s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/environment/path.dsv
+[0.204s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/local_setup.bash
+[0.204s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/local_setup.sh
+[0.205s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/local_setup.zsh
+[0.206s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/local_setup.dsv
+[0.206s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/package.dsv
+[0.206s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/ament_index/resource_index/packages/turtlebot_description
+[0.207s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/cmake/turtlebot_descriptionConfig.cmake
+[0.207s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/cmake/turtlebot_descriptionConfig-version.cmake
+[0.207s] -- Up-to-date: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/package.xml
+[0.246s] Invoked command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/turtlebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/turtlebot_description

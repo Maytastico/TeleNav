@@ -1,0 +1,2 @@
+source;share/udemy_robot_bringup/environment/ament_prefix_path.sh
+source;share/udemy_robot_bringup/environment/path.sh

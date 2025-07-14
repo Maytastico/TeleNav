@@ -1,0 +1,25 @@
+-- Install configuration: ""
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description//urdf
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description//urdf/mobile_base.xacro
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description//urdf/common_properties.xacro
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description//urdf/my_robot.urdf.xacro
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description//launch
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description//launch/display.launch.xml
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description//launch/display.launch.py
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description//rviz
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description//rviz/urdf_config.rviz
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/ament_index/resource_index/package_run_dependencies/turtlebot_description
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/ament_index/resource_index/parent_prefix_path/turtlebot_description
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/environment/ament_prefix_path.sh
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/environment/ament_prefix_path.dsv
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/environment/path.sh
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/environment/path.dsv
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/local_setup.bash
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/local_setup.sh
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/local_setup.zsh
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/local_setup.dsv
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/package.dsv
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/ament_index/resource_index/packages/turtlebot_description
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/cmake/turtlebot_descriptionConfig.cmake
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/cmake/turtlebot_descriptionConfig-version.cmake
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/install/turtlebot_description/share/turtlebot_description/package.xml

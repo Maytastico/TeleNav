@@ -1,0 +1,43 @@
+[0.023s] Invoking command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/src/udemy_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup
+[0.180s] -- The C compiler identification is GNU 13.3.0
+[0.327s] -- The CXX compiler identification is GNU 13.3.0
+[0.382s] -- Detecting C compiler ABI info
+[0.658s] -- Detecting C compiler ABI info - done
+[0.685s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.686s] -- Detecting C compile features
+[0.690s] -- Detecting C compile features - done
+[0.725s] -- Detecting CXX compiler ABI info
+[1.028s] -- Detecting CXX compiler ABI info - done
+[1.046s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.047s] -- Detecting CXX compile features
+[1.048s] -- Detecting CXX compile features - done
+[1.058s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.398s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.137s] -- Configuring done (2.1s)
+[2.161s] -- Generating done (0.0s)
+[2.168s] -- Build files have been written to: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup
+[2.190s] Invoked command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/src/udemy_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup
+[2.193s] Invoking command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup -- -j4 -l4
+[2.352s] Invoked command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup -- -j4 -l4
+[2.386s] Invoking command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup
+[2.420s] -- Install configuration: ""
+[2.420s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup//launch
+[2.423s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup//launch/my_robot_gazebo.launch.xml
+[2.423s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup//config
+[2.424s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup//config/gazebo_bridge.yaml
+[2.424s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/ament_index/resource_index/package_run_dependencies/my_robot_bringup
+[2.430s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/ament_index/resource_index/parent_prefix_path/my_robot_bringup
+[2.438s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.sh
+[2.438s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.dsv
+[2.438s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.sh
+[2.442s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.dsv
+[2.442s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.bash
+[2.442s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.sh
+[2.454s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.zsh
+[2.454s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.dsv
+[2.454s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv
+[2.455s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/ament_index/resource_index/packages/my_robot_bringup
+[2.455s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig.cmake
+[2.455s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig-version.cmake
+[2.456s] -- Installing: /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/install/my_robot_bringup/share/my_robot_bringup/package.xml
+[2.494s] Invoked command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup

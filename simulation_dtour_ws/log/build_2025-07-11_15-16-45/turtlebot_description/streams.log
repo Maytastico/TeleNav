@@ -1,0 +1,5 @@
+[0.028s] Invoking command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/turtlebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/turtlebot_description -- -j4 -l4
+[0.058s] [0mCMake Error: The current CMakeCache.txt directory /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/turtlebot_description/CMakeCache.txt is different than the directory /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/build/turtlebot_description where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.097s] [0mCMake Error: The source directory "/media/ros/fedora/home/maylis/Dokumente/simulation_dtour/src/turtlebot_description" does not exist.
+[0.097s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.105s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1

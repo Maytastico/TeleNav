@@ -1,0 +1,6 @@
+[0.030s] Invoking command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup -- -j4 -l4
+[0.053s] [0mCMake Error: The current CMakeCache.txt directory /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup/CMakeCache.txt is different than the directory /media/ros/fedora/home/maylis/Dokumente/simulation_dtour/build/my_robot_bringup where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.080s] [0mCMake Error: The source directory "/media/ros/fedora/home/maylis/Dokumente/simulation_dtour/src/my_robot_bringup" does not exist.
+[0.081s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.086s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.097s] Invoked command in '/home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/Schreibtisch/Ros/TeleNav/simulation_dtour_ws/build/my_robot_bringup -- -j4 -l4
