@@ -20,13 +20,19 @@ For simulating robots you need following packages:
 
 Just run `sudo apt install ros-humble-ros-gz`
 
+For installing the nessesary plugins run:
+`sudo  apt-get install ros-humble-gazebo-plugins`
+
 # Gazebo Commands
 
 Because for some reason my computer is using ign instead of gz this list will 
 use commands with ign if they will not work use gz
 
 * `ign topic -l`: Lists all topics
-* `ign topic -i -t <topic_name>`: Explains the topic
+* `ign topic -i -t <topic_name>`: Explains the topi
+
+To see the topics in ros2 you can use following command:
+* `ros2 topic list`
 
 # Configuration
 
@@ -140,3 +146,38 @@ Following Direction exists:
 * `GZ_TO_ROS` : From Gazebo to ros
 * `ROS_TO_GZ`: From ros to gazebo
 * `BIDIRECTIONAL`: Both can send data via this topic 
+
+For the current config following topics need to be published to work with the diff_drive and
+joint_states plugin:
+ros@ros-HP-ProBook-445-G7:/opt/ros/humble/lib$ ros2 topic list -t  # Zeigt Topics mit ihren Typen
+/clicked_point [geometry_msgs/msg/PointStamped]
+/clock [rosgraph_msgs/msg/Clock]
+/cmd_vel [geometry_msgs/msg/Twist]
+/goal_pose [geometry_msgs/msg/PoseStamped]
+/initialpose [geometry_msgs/msg/PoseWithCovarianceStamped]
+/joint_states [sensor_msgs/msg/JointState]
+/parameter_events [rcl_interfaces/msg/ParameterEvent]
+/robot_description [std_msgs/msg/String]
+/rosout [rcl_interfaces/msg/Log]
+/tf [tf2_msgs/msg/TFMessage]
+/tf_static [tf2_msgs/msg/TFMessage]
+
+In rqt graph following picture should be seen:
+
+![rqt_graph](image-2.png)
+
+Note: When looking for gazebo topics in gazebo fortress only publisher service are shown
+cmd_vel is a subscriber service and not visible
+Look at this [article](https://robotics.stackexchange.com/questions/110989/gazebo-plugin-not-creating-cmd-vel-and-odom-topics-in-ros-2-humble-with-gazebo-f)
+
+To see the values of a message type you can type:
+`ros2 interface show geometry_msgs/msg/Twist` 
+
+To drive the robot you can send following commend:
+Forwards:
+```bash
+ros2 topic pub -r 1 /cmd_vel geometry_msgs/msg/Twist "{linear: {x: -1.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
+```
+
+To drive the robot you can use the teleop twist program by running following program
+`ros2 run teleop_twist_keyboard teleop_twist_keyboard`

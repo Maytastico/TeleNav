@@ -3,7 +3,7 @@
       xmlns:ros_gz_sim="http://gazebosim.org/schema/ros_gz_sim">
 
     <gazebo reference="caster_wheel_link">
-        <mul value="0.1" />
+        <mu1 value="0.1" />
         <mu2 value="0.1" />
     </gazebo>
 
@@ -20,7 +20,7 @@
     </gazebo>
 
     <gazebo>
-        <plugin filename="gz-sim-joint-state-publisher"
+        <plugin filename="libignition-gazebo6-joint-state-publisher-system"
                 name="gz::sim::systems::JointStatePublisher">
             <joint_name>base_left_wheel_joint</joint_name>
             <joint_name>base_right_wheel_joint</joint_name>
