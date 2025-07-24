@@ -1,0 +1,8 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_description
+gmake[2]: *** No rule to make target '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/my_robot_description/urdf_cource/robot.urdf.xacro', needed by '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/my_robot_description/urdf_cource/robot.urdf'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/generate_urdf.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -7,6 +7,16 @@ We will simulate all physics as well as the work with the simulation program whi
 Inside Gazebo we can define plugins which will simulate the hardware.
 These Plugins let uns interact with the robot. So we can control the wheels and get date from the sensors.
 
+# Install
+You need to install folowing packages
+If watching this section (with the old Gazebo), when installing Gazebo you might need to follow this extra step:
+
+- First, make sure Gazebo is installed with sudo apt install ros-humble-gazebo* (don't forget the *)
+
+- Second, you might need to add this line at the end of your .bashrc (after the line to source ROS 2):
+
+source /usr/share/gazebo/setup.bash
+
 ## Comands
 
 By default ros2 and gazebo are not communicating with eatchother. To see the topics of gazebo you need

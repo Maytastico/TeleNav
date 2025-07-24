@@ -9,7 +9,7 @@
          value="$(find-pkg-share udemy_robot_bringup)/config/gazebo_bridge.yaml" />
     
     <let name="world_path"
-         value="$(find-pkg-share udemy_robot_bringup)/world/school.sdf" />
+         value="$(find-pkg-share udemy_robot_bringup)/worlds/school.sdf" />
 
     <node pkg="robot_state_publisher" exec="robot_state_publisher">
         <param name="robot_description"
@@ -17,7 +17,7 @@
     </node>
 
     <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
-        <arg name="gz_args" value="$(var world_path) -r" />
+          <arg name="gz_args" value="$(var world_path) -r" /> 
     </include>
 
     <node pkg="ros_gz_sim" exec="create" args="-v 4 -topic robot_description " />

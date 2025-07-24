@@ -1,1 +1,0 @@
-/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/simulation_bringup/build/simulation_bringup/ament_cmake_core/simulation_bringupConfig-version.cmake

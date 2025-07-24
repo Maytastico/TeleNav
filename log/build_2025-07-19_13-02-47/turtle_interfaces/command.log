@@ -1,0 +1,1 @@
+Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/turtle_interfaces -- -j6 -l6

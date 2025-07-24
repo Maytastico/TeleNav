@@ -1,0 +1,10 @@
+[0.369s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_description -- -j6 -l6
+[0.389s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.509s] -- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)
+[0.581s] -- Configuring done
+[0.587s] -- Generating done
+[0.589s] -- Build files have been written to: /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_description
+[0.617s] gmake[2]: *** No rule to make target '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/my_robot_description/urdf_cource/robot.urdf.xacro', needed by '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/my_robot_description/urdf_cource/robot.urdf'.  Stop.
+[0.618s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/generate_urdf.dir/all] Error 2
+[0.618s] gmake: *** [Makefile:146: all] Error 2
+[0.639s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_description' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/build/my_robot_description -- -j6 -l6

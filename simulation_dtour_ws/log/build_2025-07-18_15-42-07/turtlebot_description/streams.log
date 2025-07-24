@@ -1,0 +1,50 @@
+[0.012s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/build/turtlebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/src/turtlebot_description -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description
+[0.132s] -- The C compiler identification is GNU 11.4.0
+[0.257s] -- The CXX compiler identification is GNU 11.4.0
+[0.267s] -- Detecting C compiler ABI info
+[0.336s] -- Detecting C compiler ABI info - done
+[0.344s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.344s] -- Detecting C compile features
+[0.345s] -- Detecting C compile features - done
+[0.350s] -- Detecting CXX compiler ABI info
+[0.431s] -- Detecting CXX compiler ABI info - done
+[0.439s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.439s] -- Detecting CXX compile features
+[0.439s] -- Detecting CXX compile features - done
+[0.443s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.573s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.739s] -- Configuring done
+[0.741s] -- Generating done
+[0.743s] -- Build files have been written to: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/build/turtlebot_description
+[0.747s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/build/turtlebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/src/turtlebot_description -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description
+[0.748s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/build/turtlebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/build/turtlebot_description -- -j6 -l6
+[0.777s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/build/turtlebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/build/turtlebot_description -- -j6 -l6
+[0.788s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/build/turtlebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/build/turtlebot_description
+[0.793s] -- Install configuration: ""
+[0.795s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//urdf
+[0.795s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//urdf/common_properties.xacro
+[0.795s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//urdf/mobile_base.xacro
+[0.796s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//urdf/mobile_base_gazebo.xacro
+[0.796s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//urdf/my_robot.urdf.xacro
+[0.797s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//urdf/camera.xacro
+[0.797s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//launch
+[0.798s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//launch/display.launch.py
+[0.798s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//launch/display.launch.xml
+[0.798s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//rviz
+[0.798s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description//rviz/urdf_config.rviz
+[0.798s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/ament_index/resource_index/package_run_dependencies/turtlebot_description
+[0.798s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/ament_index/resource_index/parent_prefix_path/turtlebot_description
+[0.798s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/environment/ament_prefix_path.sh
+[0.799s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/environment/ament_prefix_path.dsv
+[0.799s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/environment/path.sh
+[0.799s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/environment/path.dsv
+[0.799s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/local_setup.bash
+[0.799s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/local_setup.sh
+[0.799s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/local_setup.zsh
+[0.799s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/local_setup.dsv
+[0.800s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/package.dsv
+[0.800s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/ament_index/resource_index/packages/turtlebot_description
+[0.800s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/cmake/turtlebot_descriptionConfig.cmake
+[0.800s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/cmake/turtlebot_descriptionConfig-version.cmake
+[0.801s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/install/turtlebot_description/share/turtlebot_description/package.xml
+[0.802s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/build/turtlebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_dtour_ws/build/turtlebot_description

@@ -1,0 +1,32 @@
+[0.011s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/build/my_robot_description -- -j6 -l6
+[0.064s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/build/my_robot_description -- -j6 -l6
+[0.080s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/build/my_robot_description
+[0.094s] -- Install configuration: ""
+[0.094s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//urdf
+[0.095s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//urdf/mobile_base.xacro
+[0.095s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro
+[0.095s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//urdf/camera.xacro
+[0.095s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//urdf/mobile_base_gazebo.xacro
+[0.096s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//urdf/my_robot.urdf.xacro
+[0.096s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//urdf/lidar.xacro
+[0.096s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//launch
+[0.096s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//launch/display.launch.xml
+[0.096s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//launch/display.launch.py
+[0.096s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//rviz
+[0.096s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description//rviz/urdf_config.rviz
+[0.096s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[0.097s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[0.097s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[0.097s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[0.097s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/environment/path.sh
+[0.097s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[0.097s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/local_setup.bash
+[0.097s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/local_setup.sh
+[0.097s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[0.097s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[0.098s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/package.dsv
+[0.098s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[0.098s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[0.099s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[0.099s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/install/my_robot_description/share/my_robot_description/package.xml
+[0.100s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/build/my_robot_description

@@ -8,11 +8,11 @@ sudo apt install ros-humble-joint-state-publisher -y
 sudo apt install ros-humble-joint-state-publisher-gui -y
 sudo apt install ros-humble-xacro -y
 sudo apt install '~nros-humble-rqt*' -y
-sudo apt install ros-humble-gazebo-* -y
+#old gazebo simulation sudo apt install ros-humble-gazebo-* -y
 sudo apt install ros-humble-desktop -y
-
+sudo apt install ros-humble-ros-gz -y
 # Colcon pip packages for code suggestions
-sudo apt install python3-colcon-common-extensions python3-colcon-coveragepy-result python3-colcon-core
+sudo apt install python3-colcon-common-extensions python3-colcon-coveragepy-result python3-colcon-core -y
 
 # URDF
 sudo apt install ros-humble-urdf-tutorial -y

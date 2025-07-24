@@ -1,1 +1,0 @@
-/media/ros/fedora/home/maylis/Dokumente/TeleNav/simulation_ws/src/simulation_bringup/launch/install/_local_setup_util_ps1.py
