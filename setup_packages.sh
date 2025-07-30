@@ -17,3 +17,7 @@ sudo apt install python3-colcon-common-extensions python3-colcon-coveragepy-resu
 # URDF
 sudo apt install ros-humble-urdf-tutorial -y
 sudo apt install ros-humble-tf2-tools -y
+
+# Nav2
+sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-turtlebot3* -y
+sudo apt install ros-humble-rmw-cyclonedds-cpp -y # Only for humble
