@@ -5,17 +5,6 @@
     <xacro:property name="lidar_radius" value="0.05" />
     <xacro:property name="lidar_length" value="0.05" />
 
-    <!-- Macro for cylinder inertia (if not already defined elsewhere) -->
-    <xacro:macro name="cylinder_inertia" params="m r h xyz rpy">
-        <inertial>
-            <origin xyz="${xyz}" rpy="${rpy}" />
-            <mass value="${m}" />
-            <inertia ixx="${m*(3*r*r + h*h)/12}" ixy="0" ixz="0"
-                     iyy="${m*(3*r*r + h*h)/12}" iyz="0"
-                     izz="${m*r*r/2}" />
-        </inertial>
-    </xacro:macro>
-
     <link name="lidar_link">
         <visual>
             <geometry>
@@ -38,36 +27,38 @@
         <!-- Placing lidar on top of the base (base_height is 0.2) -->
         <origin xyz="0 0 ${tower_height+0.01}" rpy="0 0 0" />
     </joint>
-    
-
+        
     <gazebo reference="lidar_link">
-        <material>Gazebo/Red</material>
-        <sensor name="laser" type="ray">
-            <pose>0 0 0 0 0 0</pose>
+        <sensor name="lidar" type="ray">
+            <always_on>true</always_on>
             <visualize>true</visualize>
-            <update_rate>10.0</update_rate>
+            <update_rate>5</update_rate>
             <ray>
-                <scan>
-                    <horizontal>
-                        <samples>360</samples>
-                        <min_angle>-3.14</min_angle>
-                        <max_angle>3.14</max_angle>
-                    </horizontal>
-                </scan>
-                <range>
-                    <min>0.3</min>
-                    <max>12</max>
-                </range>
+            <scan>
+                <horizontal>
+                <samples>360</samples>
+                <resolution>1.000000</resolution>
+                <min_angle>0.000000</min_angle>
+                <max_angle>6.280000</max_angle>
+                </horizontal>
+            </scan>
+            <range>
+                <min>0.120000</min>
+                <max>3.5</max>
+                <resolution>0.015000</resolution>
+            </range>
+            <noise>
+                <type>gaussian</type>
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+            </noise>
             </ray>
-            <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
-                <ros>
-                    <argument>--remap ~/out:=scan</argument>
-                </ros>
+            <plugin filename="libgazebo_ros_ray_sensor.so" name="lidar_plugin">
+                <topic_name>scan</topic_name>
                 <output_type>sensor_msgs/LaserScan</output_type>
-                <!-- Changed to match link name -->
                 <frame_name>lidar_link</frame_name>
             </plugin>
         </sensor>
     </gazebo>
-
+    
 </robot>

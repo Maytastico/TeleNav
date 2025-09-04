@@ -1,0 +1,1 @@
+/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_bringup/ament_cmake_core/telerobot_bringupConfig-version.cmake

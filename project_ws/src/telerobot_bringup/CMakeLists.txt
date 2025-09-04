@@ -21,4 +21,9 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+install(
+  DIRECTORY gazebo launch rviz worlds nav2
+  DESTINATION share/${PROJECT_NAME}/
+)
+
 ament_package()

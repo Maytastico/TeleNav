@@ -1,0 +1,41 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_bringup
+-- Install configuration: ""
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//gazebo
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//launch
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//launch/telerobot_gazebo_launch.xml
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//launch/telerobot_slam.xml
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//rviz
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//rviz/urdf_config.rviz
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//rviz/urdf_config_slam.rviz
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//worlds
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//worlds/school.sdf
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//nav2
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//nav2/mapper_params_online_async.yaml
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//nav2/maps
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//nav2/maps/univerity.pgm
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//nav2/maps/univerity.yaml
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//maps
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//maps/school.pgm
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup//maps/school.yaml
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/ament_index/resource_index/package_run_dependencies/telerobot_bringup
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/ament_index/resource_index/parent_prefix_path/telerobot_bringup
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/environment/ament_prefix_path.sh
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/environment/ament_prefix_path.dsv
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/environment/path.sh
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/environment/path.dsv
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/local_setup.bash
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/local_setup.sh
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/local_setup.zsh
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/local_setup.dsv
+-- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/package.dsv
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/ament_index/resource_index/packages/telerobot_bringup
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/cmake/telerobot_bringupConfig.cmake
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/cmake/telerobot_bringupConfig-version.cmake
+-- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_bringup/share/telerobot_bringup/package.xml
