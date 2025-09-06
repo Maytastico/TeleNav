@@ -1,0 +1,5 @@
+  File "/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/install/telerobot_controller/lib/python3.10/site-packages/telerobot_controller/distance_messurement.py", line 4
+    from sensor_msgs.msg import 
+                                ^
+SyntaxError: invalid syntax
+

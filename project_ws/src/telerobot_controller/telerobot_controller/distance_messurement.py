@@ -12,37 +12,37 @@ class DistanceReader(Node):
         # Abonnieren der Lidar-Topics
         self.front_subscription = self.create_subscription(
             Range,
-            'distance_front',
+            '/distance_front/out',
             self.front_callback,
             10
         )
         self.lower_subscription = self.create_subscription(
             Range,
-            'distance_lower',
+            '/distance_lower/out',
             self.lower_callback,
             10
         )
         self.back_subscription = self.create_subscription(
             Range,
-            'distance_back',
+            '/distance_back/out',
             self.back_callback,
             10
         )
-        self.get_logger().info('DistanceReader-Node gestartet.')
+        self.get_logger().info('New DistanceReader-Node gestartet.')
 
-    def front_callback(self, msg):
+    def front_callback(self, msg: Range):
         """
         Callback-Funktion für den vorderen Lidar-Sensor.
         """
         self.get_logger().info(f'Vordere Distanz: {msg.range:.2f} m')
 
-    def lower_callback(self, msg):
+    def lower_callback(self,  msg: Range):
         """
         Callback-Funktion für den unteren Lidar-Sensor.
         """
         self.get_logger().info(f'Untere Distanz: {msg.range:.2f} m')
 
-    def back_callback(self, msg):
+    def back_callback(self,  msg: Range):
         """
         Callback-Funktion für den hinteren Lidar-Sensor.
         """

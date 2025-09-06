@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'controller = telerobot_controller.distance_messurement:main'
+            'controller = telerobot_controller.distance_messurement:main',
+            'interface = telerobot_controller.interface:main'
         ],
     },
 )

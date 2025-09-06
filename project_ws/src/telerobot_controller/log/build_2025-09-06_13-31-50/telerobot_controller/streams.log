@@ -1,0 +1,24 @@
+[0.599s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/build/telerobot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/install/telerobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/telerobot_controller build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/build/telerobot_controller/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/build/telerobot_controller/install.log --single-version-externally-managed install_data
+[0.829s] running egg_info
+[0.829s] writing build/telerobot_controller/telerobot_controller.egg-info/PKG-INFO
+[0.830s] writing dependency_links to build/telerobot_controller/telerobot_controller.egg-info/dependency_links.txt
+[0.830s] writing entry points to build/telerobot_controller/telerobot_controller.egg-info/entry_points.txt
+[0.830s] writing requirements to build/telerobot_controller/telerobot_controller.egg-info/requires.txt
+[0.830s] writing top-level names to build/telerobot_controller/telerobot_controller.egg-info/top_level.txt
+[0.832s] reading manifest file 'build/telerobot_controller/telerobot_controller.egg-info/SOURCES.txt'
+[0.833s] writing manifest file 'build/telerobot_controller/telerobot_controller.egg-info/SOURCES.txt'
+[0.834s] running build
+[0.834s] running build_py
+[0.834s] copying telerobot_controller/distance_messurement.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/build/telerobot_controller/build/lib/telerobot_controller
+[0.834s] running install
+[0.834s] running install_lib
+[0.835s] copying /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/build/telerobot_controller/build/lib/telerobot_controller/distance_messurement.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/install/telerobot_controller/lib/python3.10/site-packages/telerobot_controller
+[0.836s] byte-compiling /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/install/telerobot_controller/lib/python3.10/site-packages/telerobot_controller/distance_messurement.py to distance_messurement.cpython-310.pyc
+[0.836s] running install_data
+[0.836s] running install_egg_info
+[0.838s] removing '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/install/telerobot_controller/lib/python3.10/site-packages/telerobot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.838s] Copying build/telerobot_controller/telerobot_controller.egg-info to /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/install/telerobot_controller/lib/python3.10/site-packages/telerobot_controller-0.0.0-py3.10.egg-info
+[0.839s] running install_scripts
+[0.859s] Installing controller script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/install/telerobot_controller/lib/telerobot_controller
+[0.859s] writing list of installed files to '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/build/telerobot_controller/install.log'
+[0.895s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller' returned '0': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/build/telerobot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/install/telerobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/telerobot_controller build --build-base /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/build/telerobot_controller/build install --record /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_controller/build/telerobot_controller/install.log --single-version-externally-managed install_data
