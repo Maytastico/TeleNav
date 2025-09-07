@@ -1,1 +1,30 @@
-/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_bringup/launch/telerobot_slam.xml
+<launch>
+    <let name="urdf_path" 
+         value="$(find-pkg-share telerobot_description)/urdf/my_robot.urdf.xacro" />
+    <let name="rviz_config_path"
+         value="$(find-pkg-share telerobot_bringup)/rviz/urdf_config_slam.rviz" />
+    <let name="slam_params_file"
+         value="$(find-pkg-share telerobot_bringup)/nav2/mapper_params_online_async.yaml" />
+
+
+    <node pkg="robot_state_publisher" exec="robot_state_publisher">
+        <param name="robot_description"
+               value="$(command 'xacro $(var urdf_path)')" />
+    </node>
+
+    <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py">
+        <arg name="world" value="$(find-pkg-share telerobot_bringup)/worlds/school.sdf" />
+    </include>
+
+    <include file="$(find-pkg-share slam_toolbox)/launch/online_async_launch.py">
+        <arg name="slam_params_file" value="$(var slam_params_file)" />
+        <arg name="use_sim_time" value="true" />
+    </include>
+
+
+    <node pkg="gazebo_ros" exec="spawn_entity.py"
+          args="-topic robot_description -entity my_robot" />
+
+    <node pkg="rviz2" exec="rviz2" output="screen" 
+          args="-d $(var rviz_config_path)" />
+</launch>

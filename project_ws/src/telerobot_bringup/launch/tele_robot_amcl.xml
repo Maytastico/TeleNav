@@ -24,15 +24,4 @@
         <param name="use_sim_time" value="true" />
     </node>
 
-    <include file="$(find-pkg-share nav2_bringup)/launch/bringup_launch.py">
-        <arg name="map" value="$(var map_yaml_file)" />
-        <arg name="params_file" value="$(var nav2_params_file)" />
-        <arg name="autostart" value="true" />
-        <arg name="use_sim_time" value="true" />
-        <arg name="localization" value="true" />
-    </include>
-
-    <node pkg="rviz2" exec="rviz2" output="screen" 
-          args="-d $(var rviz_config_path)" />
-
 </launch>

@@ -1,1 +1,179 @@
-/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_description/urdf/simple_distance.xacro
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Corrected property names and more reasonable dimensions -->
+    <xacro:property name="lidar_radius" value="0.01" />
+    <xacro:property name="lidar_length" value="0.01" />
+
+    <link name="tower_distance_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_length}"/>
+            </geometry>
+            <material name="grey" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_length}"/>
+            </geometry>
+        </collision>
+        <xacro:cylinder_inertia m="0.1" r="${lidar_radius}" h="${lidar_length}" 
+                           xyz="0 0 0" rpy="0 0 0" />
+    </link>
+
+    <joint name="base_lidar_joint" type="fixed">
+        <parent link="tower_link" />
+        <child link="tower_distance_link" />
+        <!-- Placing lidar on top of the base (base_height is 0.2) -->
+        <origin xyz="${tower_width/2.0+lidar_length} 0 ${(tower_height*0.5)}" rpy="0 0 0" />
+    </joint>
+
+    <gazebo reference="tower_distance_link">
+    <sensor name="lidar" type="ray">
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>1</update_rate>
+        <ray>
+            <scan>
+                <horizontal>
+                    <samples>1</samples>
+                    <resolution>1.0</resolution>
+                    <min_angle>0.0</min_angle>
+                    <max_angle>0.0</max_angle>
+                </horizontal>
+            </scan>
+            <range>
+                <min>0.12</min>
+                <max>3.5</max>
+                <resolution>0.015</resolution>
+            </range>
+            <noise>
+                <type>gaussian</type>
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+            </noise>
+        </ray>
+        <plugin filename="libgazebo_ros_ray_sensor.so" name="distance_front">
+            <topic_name>front_distance</topic_name>
+            <output_type>sensor_msgs/Range</output_type>
+            <frame_name>tower_distance_link</frame_name>
+            <radiation_type>infrared</radiation_type>
+        </plugin>
+    </sensor>
+</gazebo>
+
+    <link name="bumper_distance_front_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_length}"/>
+            </geometry>
+            <material name="grey" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_length}"/>
+            </geometry>
+        </collision>
+        <xacro:cylinder_inertia m="0.1" r="${lidar_radius}" h="${lidar_length}" 
+                           xyz="0 0 0" rpy="0 0 0" />
+    </link>
+
+    <joint name="lower_lidar_joint" type="fixed">
+        <parent link="front_bumper_link" />
+        <child link="bumper_distance_front_link" />
+        <!-- Placing lidar on top of the base (base_height is 0.2) -->
+        <origin xyz="${base_width/2.0+lidar_length} 0 ${(base_height/2.0)}" rpy="0 0 0" />
+    </joint>
+        
+    <gazebo reference="bumper_distance_front_link">
+    <sensor name="lower_lidar" type="ray">
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>1</update_rate>
+        <ray>
+            <scan>
+                <horizontal>
+                    <samples>1</samples>
+                    <resolution>1.0</resolution>
+                    <min_angle>0.0</min_angle>
+                    <max_angle>0.0</max_angle>
+                </horizontal>
+            </scan>
+            <range>
+                <min>0.12</min>
+                <max>3.5</max>
+                <resolution>0.015</resolution>
+            </range>
+            <noise>
+                <type>gaussian</type>
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+            </noise>
+        </ray>
+        <plugin filename="libgazebo_ros_ray_sensor.so" name="distance_lower">
+            <topic_name>lower_distance</topic_name>
+            <output_type>sensor_msgs/Range</output_type>
+            <frame_name>bumper_distance_front_link</frame_name>
+            <radiation_type>infrared</radiation_type>
+        </plugin>
+    </sensor>
+</gazebo>
+
+
+    <link name="bumper_distance_back_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_length}"/>
+            </geometry>
+            <material name="grey" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_length}"/>
+            </geometry>
+        </collision>
+        <xacro:cylinder_inertia m="0.1" r="${lidar_radius}" h="${lidar_length}" 
+                           xyz="0 0 0" rpy="0 0 0" />
+    </link>
+
+    <joint name="lower_back_lidar_joint" type="fixed">
+        <parent link="back_bumper_link" />
+        <child link="bumper_distance_back_link" />
+        <!-- Placing lidar on top of the base (base_height is 0.2) -->
+        <origin xyz="${-base_width/2.0-lidar_length} 0 ${(base_height/2.0)}" rpy="0 0 0" />
+    </joint>
+
+    <gazebo reference="bumper_distance_back_link">
+    <sensor name="lower_back_lidar" type="ray">
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>1</update_rate>
+        <ray>
+            <scan>
+                <horizontal>
+                    <samples>1</samples>
+                    <resolution>1.0</resolution>
+                    <min_angle>0.0</min_angle>
+                    <max_angle>0.0</max_angle>
+                </horizontal>
+            </scan>
+            <range>
+                <min>0.12</min>
+                <max>3.5</max>
+                <resolution>0.015</resolution>
+            </range>
+            <noise>
+                <type>gaussian</type>
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+            </noise>
+        </ray>
+        <plugin filename="libgazebo_ros_ray_sensor.so" name="distance_back">
+            <topic_name>back_distance</topic_name>
+            <output_type>sensor_msgs/Range</output_type>
+            <frame_name>bumper_distance_back_link</frame_name>
+            <radiation_type>infrared</radiation_type>
+        </plugin>
+    </sensor>
+</gazebo>
+</robot>
