@@ -16,6 +16,7 @@ setup(
         # Füge helpers-Ordner hinzu:
         ('lib/' + package_name + '/helpers', glob.glob('telerobot_controller/helpers/*')),
         ('lib/' + package_name + '/types', glob.glob('telerobot_controller/types/*')),
+        ('lib/' + package_name + '/nodes', glob.glob('telerobot_controller/nodes/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

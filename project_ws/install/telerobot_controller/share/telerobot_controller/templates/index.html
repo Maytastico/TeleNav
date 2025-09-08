@@ -41,30 +41,55 @@
     </div>
     <script>
         // Joystick initialisieren
+        const MoveCmdEnum = Object.freeze({
+            STOP: 0,
+            FORWARD: 1,
+            TURN_LEFT: 2,
+            TURN_RIGHT: 3,
+            fromString: function(cmdStr) {
+                const key = cmdStr.toUpperCase();
+                if (this.hasOwnProperty(key)) {
+                    return this[key];
+                }
+                throw new Error(`Unknown command: ${cmdStr}`);
+            }
+        });
+
+        class MoveCmd {
+            constructor(x, y, cmd) {
+                this.x = x;
+                this.y = y;
+                this.cmd = cmd; // should be a value from MoveCmdEnum
+            }
+        }
+
         var joystick = new JoyStick('joystick', {}, function(stickData) {
             // stickData enthält x, y, cardinalDirection
             let direction = stickData.cardinalDirection;
-            let command = null;
-            if (direction === "N") command = "forward";
-            else if (direction === "S") command = "backward";
-            else if (direction === "W") command = "left";
-            else if (direction === "E") command = "right";
-            else if (direction === "C") command = "stop";
+            let cmd = null;
+            let getx = stickData.getx;
+            let gety = stickData.gety;
+            if (direction === "N") cmd = "FORWARD";
+            else if (direction === "S") cmd = "STOP";
+            else if (direction === "W") cmd = "TURN_LEFT";
+            else if (direction === "E") cmd = "TURN_RIGHT";
+            else if (direction === "C") cmd = "STOP";
             // Nur senden, wenn Richtung erkannt
+            
             if (command) {
-                sendCommand(command);
+                sendCommand(MoveCmd(getx, gety, cmd));
             }
         });
 
         let lastCommand = null;
-        function sendCommand(cmd) {
-            // Nur senden, wenn sich der Befehl geändert hat
-            if (cmd === lastCommand) return;
-            lastCommand = cmd;
+
+        function sendCommand(move_cmd) {
+            if (move_cmd.cmd === lastCommand) return;
+            lastCommand = move_cmd.cmd;
             fetch('/control', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({command: cmd})
+                body: JSON.stringify(move_cmd)
             }).then(response => response.json())
               .then(data => console.log(data))
               .catch(err => alert('Fehler beim Senden: ' + err));

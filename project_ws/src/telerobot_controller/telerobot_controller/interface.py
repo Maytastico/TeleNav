@@ -1,7 +1,7 @@
 from flask import Flask, render_template, Response, request, jsonify
-from telerobot_controller.telerobot_controller.types.move_cmd_emum import MoveCmdEnum 
-from nodes.image_subscriber import ImageSubscriber
-from nodes.move_cmd_publisher import MoveCmdPublisher
+from telerobot_controller.types.move_cmd_emum import MoveCmdEnum 
+from telerobot_controller.nodes.image_subscriber import ImageSubscriber, latest_frame
+from telerobot_controller.nodes.move_cmd_publisher import MoveCmdPublisher
 from sensor_msgs.msg import Image
 import rclpy
 import threading
@@ -21,10 +21,9 @@ app = Flask(
 
 print(os.path.join(SHARE_DIR, 'static'))
 pcs: set = set()
-IMAGE_TOPIC: str = '/camera_sensor/image_raw'
 
-latest_frame: bytes
 move_cmd_publisher: MoveCmdPublisher
+image_node: ImageSubscriber
 
 def ros_spin(image_node: ImageSubscriber, move_cmd_publisher: MoveCmdPublisher):
     rclpy.spin(image_node)
@@ -39,10 +38,12 @@ def index():
 
 def generate_frames():
     last_frame = None
-    global latest_frame
+    global image_node
     while True:
-        if latest_frame is not None and latest_frame != last_frame:
-            last_frame = latest_frame
+        print(str(image_node.latest_frame))
+        if image_node.latest_frame is not None and image_node.latest_frame != last_frame:
+
+            last_frame = image_node.latest_frame
             yield (b'--frame\r\n'
                    b'Content-Type: image/jpeg\r\n\r\n' + latest_frame + b'\r\n')
         else:
@@ -79,6 +80,7 @@ def control():
 
 def main():
     rclpy.init()
+    global image_node
     image_node = ImageSubscriber()
     global move_cmd_publisher
     move_cmd_publisher = MoveCmdPublisher()
