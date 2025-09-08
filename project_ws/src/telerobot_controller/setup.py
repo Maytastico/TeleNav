@@ -11,8 +11,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('lib/' + package_name + '/templates', glob.glob('templates/*')),
-        ('lib/' + package_name + '/static', glob.glob('static/*')),
+        ('share/' + package_name + '/templates', glob.glob('templates/*')),
+        ('share/' + package_name + '/static', glob.glob('static/*')),
         # Füge helpers-Ordner hinzu:
         ('lib/' + package_name + '/helpers', glob.glob('telerobot_controller/helpers/*')),
     ],

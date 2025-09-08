@@ -6,6 +6,7 @@ import uuid
 import asyncio
 from rclpy.node import Node
 from sensor_msgs.msg import Image
+from geometry_msgs.msg import Twist
 import threading
 import cv2
 from cv_bridge import CvBridge
@@ -27,6 +28,7 @@ IMAGE_TOPIC = '/camera_sensor/image_raw'
 bridge = CvBridge()
 global latest_frame
 
+
 class ImageSubscriber(Node):
     def __init__(self):
         super().__init__('image_subscriber')
@@ -35,6 +37,11 @@ class ImageSubscriber(Node):
             Image,
             '/camera_sensor/image_raw',
             self.listener_callback,
+            10
+        )
+        self.controller = self.create_publisher(
+            Twist,
+            '/cmd_vel',
             10
         )
 
@@ -47,6 +54,15 @@ class ImageSubscriber(Node):
         except Exception as e:
             self.get_logger().error(f'Error processing image: {e}')
 
+class ControlSubscriber(Node):
+    def __init__(self):
+        super().__init__('control_subscriber')
+        self.publisher = self.create_publisher(
+            Twist,
+            '/cmd_vel',
+            10
+        )
+
 
 def ros_spin(image_node: ImageSubscriber):
     rclpy.spin(image_node)
@@ -58,53 +74,28 @@ def index():
     return render_template("index.html")
 
 def generate_frames():
+    last_frame = None
     while True:
-        start_time = time.time()
-        # Concatenate frame and yield for streaming
-        yield (b'--frame\r\n'
-                b'Content-Type: image/jpeg\r\n\r\n' + latest_frame + b'\r\n') 
-        elapsed_time = time.time() - start_time
-        print(f"Frame generation time: {elapsed_time} seconds")
+        global latest_frame
+        if latest_frame is not None and latest_frame != last_frame:
+            last_frame = latest_frame
+            yield (b'--frame\r\n'
+                   b'Content-Type: image/jpeg\r\n\r\n' + latest_frame + b'\r\n')
+        else:
+            time.sleep(0.01)  # kurz warten, um CPU-Last zu reduzieren
 
-async def offer_async():
-    params = await request.json # type: ignore
-    offer = RTCSessionDescription(sdp=params["sdp"], type=params["type"])
-
-    # Create an RTCPeerConnection instance
-    pc = RTCPeerConnection()
-
-    # Generate a unique ID for the RTCPeerConnection
-    pc_id = "PeerConnection(%s)" % uuid.uuid4()
-    pc_id = pc_id[:8]
-
-    # Create a data channel named "chat"
-    # pc.createDataChannel("chat")
-
-    # Create and set the local description
-    await pc.createOffer(offer) # type: ignore
-    await pc.setLocalDescription(offer)
-
-    # Prepare the response data with local SDP and type
-    response_data = {"sdp": pc.localDescription.sdp, "type": pc.localDescription.type}
-
-    return jsonify(response_data)
-
-def offer():
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    
-    future = asyncio.run_coroutine_threadsafe(offer_async(), loop)
-    return future.result()
-
-# Route to handle the offer request
-@app.route('/offer', methods=['POST'])
-def offer_route():
-    return offer()
 
 # Route to stream video frames
 @app.route('/video_feed')
 def video_feed():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route('/control', methods=['POST'])
+def control():
+    data = request.json
+    print(f"Received control data: {data}")
+    # Hier können Sie die Steuerbefehle verarbeiten und an den Roboter senden
+    return jsonify({"status": "success", "received": data})
 
 def main():
     rclpy.init()
