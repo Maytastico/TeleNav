@@ -1,0 +1,45 @@
+[0.014s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_interfaces/build/telerobot_interfaces': /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_interfaces -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_interfaces/install/telerobot_interfaces
+[0.032s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.245s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.249s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.256s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.310s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.568s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[0.569s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.569s]   telerobot_interfaces --arguments-file
+[0.569s]   /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_interfaces/build/telerobot_interfaces/rosidl_adapter__arguments__telerobot_interfaces.json
+[0.569s]   --output-dir
+[0.569s]   /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_interfaces/build/telerobot_interfaces/rosidl_adapter/telerobot_interfaces
+[0.570s]   --output-file
+[0.570s]   /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_interfaces/build/telerobot_interfaces/rosidl_adapter/telerobot_interfaces.idls)
+[0.570s]   returned error code 1:
+[0.570s] 
+[0.571s]   Traceback (most recent call last):
+[0.571s] 
+[0.571s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[0.571s]       return _run_code(code, main_globals, None,
+[0.571s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[0.572s]       exec(code, run_globals)
+[0.572s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.572s]       sys.exit(main())
+[0.572s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[0.572s]       abs_idl_file = convert_to_idl(
+[0.572s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.572s]       return convert_msg_to_idl(
+[0.572s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.573s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.573s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 535, in parse_message_string
+[0.573s]       constants.append(Constant(type_string, name, value))
+[0.573s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 316, in __init__
+[0.573s]       raise TypeError("the constant type '%s' must be a primitive type" %
+[0.573s] 
+[0.573s]   TypeError: the constant type 'uint' must be a primitive type
+[0.574s] 
+[0.574s] Call Stack (most recent call first):
+[0.574s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.574s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[0.574s] 
+[0.574s] [0m
+[0.574s] -- Configuring incomplete, errors occurred!
+[0.574s] See also "/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_interfaces/build/telerobot_interfaces/CMakeFiles/CMakeOutput.log".
+[0.578s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_interfaces/build/telerobot_interfaces' returned '1': /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_interfaces -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_interfaces/install/telerobot_interfaces

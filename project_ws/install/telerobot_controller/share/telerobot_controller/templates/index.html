@@ -13,34 +13,54 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+            align-items: center;
         }
         #camera {
             border: 2px solid #333;
         }
-        button {
-            padding: 10px 20px;
-            font-size: 1.2em;
+        #joystick-container {
+            margin-top: 20px;
         }
     </style>
+    <!-- JoyStick library (https://github.com/bobboteck/JoyStick) -->
+    <script src="{{ url_for('static', filename='joystick.min.js') }}"></script>
 </head>
 <body>
     <h1>TeleNav Dashboard</h1>
     <div id="dashboard">
         <div>
             <h2>Kamerabild</h2>
-            <video id="camera" src="{{ url_for('video_feed') }}" width="480" height="360" alt="Kamerabild">
+            <img id="camera" src="{{ url_for('video_feed') }}" width="480" height="360" alt="Kamerabild">
         </div>
         <div id="controls">
             <h2>Steuerung</h2>
-            <button onclick="sendCommand('forward')">Vorwärts</button>
-            <button onclick="sendCommand('backward')">Rückwärts</button>
-            <button onclick="sendCommand('left')">Links</button>
-            <button onclick="sendCommand('right')">Rechts</button>
-            <button onclick="sendCommand('stop')">Stopp</button>
+            <div id="joystick-container">
+                <div id="joystick" style="width:200px;height:200px;"></div>
+            </div>
         </div>
     </div>
     <script>
+        // Joystick initialisieren
+        var joystick = new JoyStick('joystick', {}, function(stickData) {
+            // stickData enthält x, y, cardinalDirection
+            let direction = stickData.cardinalDirection;
+            let command = null;
+            if (direction === "N") command = "forward";
+            else if (direction === "S") command = "backward";
+            else if (direction === "W") command = "left";
+            else if (direction === "E") command = "right";
+            else if (direction === "C") command = "stop";
+            // Nur senden, wenn Richtung erkannt
+            if (command) {
+                sendCommand(command);
+            }
+        });
+
+        let lastCommand = null;
         function sendCommand(cmd) {
+            // Nur senden, wenn sich der Befehl geändert hat
+            if (cmd === lastCommand) return;
+            lastCommand = cmd;
             fetch('/control', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},

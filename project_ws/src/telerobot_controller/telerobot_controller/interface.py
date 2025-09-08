@@ -1,15 +1,12 @@
 from flask import Flask, render_template, Response, request, jsonify
-from aiortc import RTCPeerConnection, RTCSessionDescription
-import rclpy
-import json
-import uuid
-import asyncio
-from rclpy.node import Node
+from telerobot_controller.telerobot_controller.types.move_cmd_emum import MoveCmdEnum 
+from nodes.image_subscriber import ImageSubscriber
+from nodes.move_cmd_publisher import MoveCmdPublisher
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import Twist
+import rclpy
 import threading
-import cv2
-from cv_bridge import CvBridge
+
+
 import time
 import os
 from ament_index_python.packages import get_package_share_directory
@@ -23,49 +20,16 @@ app = Flask(
 )
 
 print(os.path.join(SHARE_DIR, 'static'))
-pcs = set()
-IMAGE_TOPIC = '/camera_sensor/image_raw'
-bridge = CvBridge()
-global latest_frame
+pcs: set = set()
+IMAGE_TOPIC: str = '/camera_sensor/image_raw'
 
+latest_frame: bytes
+move_cmd_publisher: MoveCmdPublisher
 
-class ImageSubscriber(Node):
-    def __init__(self):
-        super().__init__('image_subscriber')
-        print("Node initialized Hi")
-        self.camera = self.create_subscription(
-            Image,
-            '/camera_sensor/image_raw',
-            self.listener_callback,
-            10
-        )
-        self.controller = self.create_publisher(
-            Twist,
-            '/cmd_vel',
-            10
-        )
-
-    def listener_callback(self, msg: Image):
-        try:
-            global latest_frame
-            cv_image = bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-            ret, jpeg = cv2.imencode('.jpg', cv_image)
-            latest_frame = jpeg.tobytes()
-        except Exception as e:
-            self.get_logger().error(f'Error processing image: {e}')
-
-class ControlSubscriber(Node):
-    def __init__(self):
-        super().__init__('control_subscriber')
-        self.publisher = self.create_publisher(
-            Twist,
-            '/cmd_vel',
-            10
-        )
-
-
-def ros_spin(image_node: ImageSubscriber):
+def ros_spin(image_node: ImageSubscriber, move_cmd_publisher: MoveCmdPublisher):
     rclpy.spin(image_node)
+    rclpy.spin(move_cmd_publisher)
+    image_node.destroy_node()
     image_node.destroy_node()
     rclpy.shutdown()
 
@@ -75,8 +39,8 @@ def index():
 
 def generate_frames():
     last_frame = None
+    global latest_frame
     while True:
-        global latest_frame
         if latest_frame is not None and latest_frame != last_frame:
             last_frame = latest_frame
             yield (b'--frame\r\n'
@@ -94,13 +58,31 @@ def video_feed():
 def control():
     data = request.json
     print(f"Received control data: {data}")
-    # Hier können Sie die Steuerbefehle verarbeiten und an den Roboter senden
-    return jsonify({"status": "success", "received": data})
+
+    # Extract values from received data
+    if data is None:
+        return jsonify({"status": "error", "message": "No JSON data received"}), 400
+    joy_x = data.get('joy_x', 0)
+    joy_y = data.get('joy_y', 0)
+    cmd = data.get('cmd', 0)
+
+    try:
+        # Convert cmd to MoveCmdEnum if necessary
+        if not isinstance(cmd, MoveCmdEnum):
+            cmd_enum = MoveCmdEnum(cmd)
+        else:
+            cmd_enum = cmd
+        move_cmd_publisher.publish_move_cmd(joy_x, joy_y, cmd_enum)
+        return jsonify({"status": "success", "received": data})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 def main():
     rclpy.init()
     image_node = ImageSubscriber()
-    t = threading.Thread(target=ros_spin, args=(image_node, ), daemon=True)
+    global move_cmd_publisher
+    move_cmd_publisher = MoveCmdPublisher()
+    t = threading.Thread(target=ros_spin, args=(image_node, move_cmd_publisher), daemon=True)
     t.start()
     app.run(host='0.0.0.0', port=5000, debug=False, use_reloader=False)
 

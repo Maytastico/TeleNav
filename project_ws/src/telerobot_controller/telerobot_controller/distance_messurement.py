@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Range
+from telerobot_interfaces.msg import MoveCmd
 
 class DistanceReader(Node):
     """
