@@ -76,8 +76,8 @@
             else if (direction === "C") cmd = "STOP";
             // Nur senden, wenn Richtung erkannt
             
-            if (command) {
-                sendCommand(MoveCmd(getx, gety, cmd));
+            if (cmd) {
+                sendCommand(new MoveCmd(getx, gety, cmd));
             }
         });
 

@@ -1,5 +1,5 @@
 from rclpy.node import Node
-from types.move_cmd_emum import MoveCmdEnum
+from telerobot_controller.types.move_cmd_enum import MoveCmdEnum
 from telerobot_interfaces.msg import MoveCmd
 
 class MoveCmdPublisher(Node):

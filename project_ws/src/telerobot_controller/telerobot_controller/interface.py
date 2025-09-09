@@ -1,6 +1,6 @@
 from flask import Flask, render_template, Response, request, jsonify
-from telerobot_controller.types.move_cmd_emum import MoveCmdEnum 
-from telerobot_controller.nodes.image_subscriber import ImageSubscriber, latest_frame
+from telerobot_controller.types.move_cmd_enum import MoveCmdEnum 
+from telerobot_controller.nodes.image_subscriber import ImageSubscriber
 from telerobot_controller.nodes.move_cmd_publisher import MoveCmdPublisher
 from sensor_msgs.msg import Image
 import rclpy
@@ -40,12 +40,11 @@ def generate_frames():
     last_frame = None
     global image_node
     while True:
-        print(str(image_node.latest_frame))
         if image_node.latest_frame is not None and image_node.latest_frame != last_frame:
 
             last_frame = image_node.latest_frame
             yield (b'--frame\r\n'
-                   b'Content-Type: image/jpeg\r\n\r\n' + latest_frame + b'\r\n')
+                   b'Content-Type: image/jpeg\r\n\r\n' + image_node.latest_frame + b'\r\n')
         else:
             time.sleep(0.01)  # kurz warten, um CPU-Last zu reduzieren
 
@@ -65,7 +64,11 @@ def control():
         return jsonify({"status": "error", "message": "No JSON data received"}), 400
     joy_x = data.get('joy_x', 0)
     joy_y = data.get('joy_y', 0)
-    cmd = data.get('cmd', 0)
+    cmd_str = data.get('cmd', 'STOP')  # Default to a valid enum name if needed
+    try:
+        cmd = MoveCmdEnum[cmd_str]
+    except KeyError:
+        return jsonify({"status": "error", "message": f"Invalid cmd: {cmd_str}"}), 400
 
     try:
         # Convert cmd to MoveCmdEnum if necessary

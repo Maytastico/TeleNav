@@ -1,2 +1,0 @@
-/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/python3.10/site-packages/telerobot_controller/interface.py:44: SyntaxWarning: "is not" with a literal. Did you mean "!="?
-  if latest_frame is not b'' and latest_frame != last_frame:

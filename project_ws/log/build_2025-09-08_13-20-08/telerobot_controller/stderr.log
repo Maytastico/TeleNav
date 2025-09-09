@@ -1,5 +1,0 @@
-  File "/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/python3.10/site-packages/telerobot_controller/interface.py", line 6
-    from telerobot_interfaces.msg import 
-                                         ^
-SyntaxError: invalid syntax
-
