@@ -1,60 +1,60 @@
-# Setup
+# Einrichtung 🛠️
 
-To use this project, you need **ROS 2 Humble** on **Ubuntu 22.04.5 LTS** as well as the following Python packages:
+Um dieses Projekt nutzen zu können, benötigst du:
 
-    * `flask`
-    * `scipy`
-    * `numpy`
+  * **ROS 2 Humble** auf **Ubuntu 22.04.5 LTS**.
+  * Folgende Python-Pakete:
+      * `flask`
+      * `scipy`
+      * `numpy`
 
-All required packages can be easily installed using the `bash setup_packages.sh` script in the root directory of the repository.
-
------
-
-# Running
-
-1.  First, set up the ROS 2 environment by sourcing the `install/setup.bash` file:
-
-        ```bash
-        source install/setup.bash
-        ```
-
-2.  Then, start the simulation with:
-
-        ```bash
-        ros2 launch telerobot_bringup telerobo_simple.xml
-        ```
-
-3.  Next, start the web interface:
-
-        ```bash
-        ros2 run telerobot_controller interface
-        ```
-
-4.  Finally, start the controller:
-
-        ```bash
-        ros2 run telerobot_controller controller
-        ```
-
-The web interface is now available at **127.0.0.1:5000**.
-
-> **Note:** The controller may crash due to a known ROS 2 bug with the range sensor, which causes it to return **NaN** values. 
-> There is currently no known solution for this issue.
+Alle erforderlichen Pakete kannst du ganz einfach über das Skript `bash setup_packages.sh` im Stammverzeichnis des Repositories installieren.
 
 -----
 
-# Usage
+# Ausführen 🚀
 
-You can control the robot either with the keyboard or the mouse.
+1.  Richte zuerst die ROS 2-Umgebung ein, indem du die Datei `install/setup.bash` lädst:
+    ```bash
+    source install/setup.bash
+    ```
+2.  Starte anschließend die Simulation mit:
+    ```bash
+    ros2 launch telerobot_bringup telerobo_simple.xml
+    ```
+3.  Danach starte die Webschnittstelle:
+    ```bash
+    ros2 run telerobot_controller interface
+    ```
+4.  Zum Schluss starte den Controller:
+    ```bash
+    ros2 run telerobot_controller controller
+    ```
 
-### Keyboard Control
+Die Webschnittstelle ist nun unter **127.0.0.1:5000** erreichbar.
 
-    * **W:** Forward
-    * **S:** Backward
-    * **D:** Turn right
-    * **A:** Turn left
-    * **Spacebar:** Stop
+> **Hinweis:** Der Controller kann abstürzen, da ein bekannter ROS 2-Fehler mit dem Reichweitensensor auftritt, der dazu führt, dass **NaN**-Werte zurückgegeben werden. Bisher gibt es keine bekannte Lösung für dieses Problem. 🐞
 
-### Mouse Control
+-----
 
-Move the green circle in the desired direction to control the robot.
+# Benutzung 🎮
+
+Du kannst den Roboter entweder über die Tastatur oder mit der Maus steuern.
+
+### Tastatursteuerung ⌨️
+
+  * **W:** Vorwärts
+  * **S:** Rückwärts
+  * **D:** Nach rechts drehen
+  * **A:** Nach links drehen
+  * **Leertaste:** Anhalten
+
+### Maussteuerung 🖱️
+
+Bewege den grünen Kreis in die gewünschte Richtung, um den Roboter zu steuern.
+
+-----
+
+# Entwicklung 💻
+
+Nachdem du die Umgebung des Projekts (`project_ws`) eingerichtet hast, führe `code .` aus, um Visual Studio Code zu starten.
