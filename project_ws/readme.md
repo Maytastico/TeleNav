@@ -1,60 +1,60 @@
-# Einrichtung 🛠️
+# Setup 🛠️
 
-Um dieses Projekt nutzen zu können, benötigst du:
+To use this project, you need:
 
-  * **ROS 2 Humble** auf **Ubuntu 22.04.5 LTS**.
-  * Folgende Python-Pakete:
-      * `flask`
-      * `scipy`
-      * `numpy`
+    * **ROS 2 Humble** on **Ubuntu 22.04.5 LTS**
+    * The following Python packages:
+            * `flask`
+            * `scipy`
+            * `numpy`
 
-Alle erforderlichen Pakete kannst du ganz einfach über das Skript `bash setup_packages.sh` im Stammverzeichnis des Repositories installieren.
-
------
-
-# Ausführen 🚀
-
-1.  Richte zuerst die ROS 2-Umgebung ein, indem du die Datei `install/setup.bash` lädst:
-    ```bash
-    source install/setup.bash
-    ```
-2.  Starte anschließend die Simulation mit:
-    ```bash
-    ros2 launch telerobot_bringup telerobo_simple.xml
-    ```
-3.  Danach starte die Webschnittstelle:
-    ```bash
-    ros2 run telerobot_controller interface
-    ```
-4.  Zum Schluss starte den Controller:
-    ```bash
-    ros2 run telerobot_controller controller
-    ```
-
-Die Webschnittstelle ist nun unter **127.0.0.1:5000** erreichbar.
-
-> **Hinweis:** Der Controller kann abstürzen, da ein bekannter ROS 2-Fehler mit dem Reichweitensensor auftritt, der dazu führt, dass **NaN**-Werte zurückgegeben werden. Bisher gibt es keine bekannte Lösung für dieses Problem. 🐞
+You can easily install all required packages using the `bash setup_packages.sh` script in the root directory of the repository.
 
 -----
 
-# Benutzung 🎮
+# Running 🚀
 
-Du kannst den Roboter entweder über die Tastatur oder mit der Maus steuern.
+1.  First, set up the ROS 2 environment by sourcing the `install/setup.bash` file:
+        ```bash
+        source install/setup.bash
+        ```
+2.  Then start the simulation with:
+        ```bash
+        ros2 launch telerobot_bringup telerobo_simple.xml
+        ```
+3.  Next, start the web interface:
+        ```bash
+        ros2 run telerobot_controller interface
+        ```
+4.  Finally, start the controller:
+        ```bash
+        ros2 run telerobot_controller controller
+        ```
 
-### Tastatursteuerung ⌨️
+The web interface will now be available at **127.0.0.1:5000**.
 
-  * **W:** Vorwärts
-  * **S:** Rückwärts
-  * **D:** Nach rechts drehen
-  * **A:** Nach links drehen
-  * **Leertaste:** Anhalten
-
-### Maussteuerung 🖱️
-
-Bewege den grünen Kreis in die gewünschte Richtung, um den Roboter zu steuern.
+> **Note:** The controller may crash due to a known ROS 2 bug with the range sensor, which causes **NaN** values to be returned. There is currently no known solution for this issue. 🐞
 
 -----
 
-# Entwicklung 💻
+# Usage 🎮
 
-Nachdem du die Umgebung des Projekts (`project_ws`) eingerichtet hast, führe `code .` aus, um Visual Studio Code zu starten.
+You can control the robot either with the keyboard or the mouse.
+
+### Keyboard Control ⌨️
+
+    * **W:** Move forward
+    * **S:** Move backward
+    * **D:** Turn right
+    * **A:** Turn left
+    * **Spacebar:** Stop
+
+### Mouse Control 🖱️
+
+Move the green circle in the desired direction to control the robot.
+
+-----
+
+# Development 💻
+
+After setting up the project environment (`project_ws`), run `code .` to start Visual Studio Code.

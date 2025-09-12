@@ -337,6 +337,7 @@ Add following lines to `package.xml` under **buildtool_depend**
 ```
 
 Then add this to your **CMakeLists.xml**
+Add this under **find_package(ament_cmake REQUIRED)**
 Depending on your message definition add the files to rosidl_generate_interfaces
 ```cmake
 # find dependencies
@@ -361,7 +362,8 @@ e.q
     }
 ```
 
-
+NOTE: When the interface is still not recignized open the project via the sourced enviroment
+(source install/setup.bash)
 
 ## Create a package with urdf files
 This explaines how to create a package with urdf files.
