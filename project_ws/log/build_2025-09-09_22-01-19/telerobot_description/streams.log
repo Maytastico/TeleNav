@@ -1,0 +1,38 @@
+[0.027s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description -- -j6 -l6
+[0.110s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description -- -j6 -l6
+[0.111s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description
+[0.122s] -- Install configuration: ""
+[0.122s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf
+[0.122s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/common_properties.xacro
+[0.122s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/my_robot.urdf.xacro
+[0.122s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/robot_base.xacro
+[0.126s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/camera.xacro
+[0.126s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/lidar.xacro
+[0.126s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/robot_base_gazebo.xacro
+[0.126s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/simple_robot.urdf.xacro
+[0.126s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/simple_distance.xacro
+[0.126s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/mosro.urdf.xacro
+[0.126s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/mosro_gazebo.xacro
+[0.126s] -- Installing: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/mosro_base.xacro
+[0.126s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//launch
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//launch/display.launch.xml
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//launch/display_simple.launch.xml
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//launch/display_mosro.xml
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//rviz
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//rviz/urdf_config.rviz
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//meshes
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//meshes/Mosro-PartReifen.stl
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//meshes/Mosro.stl
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/environment/ament_prefix_path.sh
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/environment/ament_prefix_path.dsv
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/environment/path.sh
+[0.127s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/environment/path.dsv
+[0.128s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/local_setup.bash
+[0.128s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/local_setup.sh
+[0.128s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/local_setup.zsh
+[0.128s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/local_setup.dsv
+[0.128s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/package.dsv
+[0.128s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/cmake/telerobot_descriptionConfig.cmake
+[0.128s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/cmake/telerobot_descriptionConfig-version.cmake
+[0.128s] -- Up-to-date: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/package.xml
+[0.144s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description

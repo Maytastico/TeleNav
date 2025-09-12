@@ -8,13 +8,14 @@ module telerobot_interfaces {
     module MoveCmd_Constants {
       const uint8 STOP = 0;
       const uint8 FORWARD = 1;
+      const uint8 BACKWARD = 4;
       const uint8 TURN_LEFT = 2;
       const uint8 TURN_RIGHT = 3;
     };
     struct MoveCmd {
-      uint8 joy_x;
+      int8 joy_x;
 
-      uint8 joy_y;
+      int8 joy_y;
 
       uint8 cmd;
     };

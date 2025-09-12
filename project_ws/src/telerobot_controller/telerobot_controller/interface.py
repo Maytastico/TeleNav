@@ -2,6 +2,7 @@ from flask import Flask, render_template, Response, request, jsonify
 from telerobot_controller.types.move_cmd_enum import MoveCmdEnum 
 from telerobot_controller.nodes.image_subscriber import ImageSubscriber
 from telerobot_controller.nodes.move_cmd_publisher import MoveCmdPublisher
+from telerobot_interfaces.msg import MoveCmd
 from sensor_msgs.msg import Image
 import rclpy
 import threading
@@ -62,8 +63,8 @@ def control():
     # Extract values from received data
     if data is None:
         return jsonify({"status": "error", "message": "No JSON data received"}), 400
-    joy_x = data.get('joy_x', 0)
-    joy_y = data.get('joy_y', 0)
+    joy_x = int(data.get('joy_x', 0))
+    joy_y = int(data.get('joy_y', 0))
     cmd_str = data.get('cmd', 'STOP')  # Default to a valid enum name if needed
     try:
         cmd = MoveCmdEnum[cmd_str]
@@ -76,7 +77,7 @@ def control():
             cmd_enum = MoveCmdEnum(cmd)
         else:
             cmd_enum = cmd
-        move_cmd_publisher.publish_move_cmd(joy_x, joy_y, cmd_enum)
+        move_cmd_publisher.publish_move_cmd(MoveCmd(joy_x=joy_x, joy_y=joy_y, cmd=cmd_enum.value))
         return jsonify({"status": "success", "received": data})
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500

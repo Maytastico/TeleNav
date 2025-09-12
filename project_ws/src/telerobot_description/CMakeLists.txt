@@ -8,6 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
+find_package(urdf REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -22,9 +23,8 @@ if(BUILD_TESTING)
 endif()
 
 
-install(
-  DIRECTORY urdf launch rviz
-  DESTINATION share/${PROJECT_NAME}/
+install(DIRECTORY meshes rviz urdf launch
+  DESTINATION share/${PROJECT_NAME}
 )
 
 ament_package()

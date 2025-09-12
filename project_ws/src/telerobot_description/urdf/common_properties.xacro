@@ -13,6 +13,10 @@
         <color rgba="0.5 0 0 1" />
     </material>
 
+    <material name="black">
+        <color rgba="0 0 0 1" />
+    </material>
+
     <xacro:macro name="box_inertia" params="m l w h xyz rpy">
         <inertial>
             <origin xyz="${xyz}" rpy="${rpy}" />
@@ -43,4 +47,39 @@
         </inertial>
     </xacro:macro>
 
+    <xacro:macro name="gazebo_lidar_sensor" params="sensor_name link_name update_rate samples resolution min_angle max_angle min max range_resolution plugin_name topic_name output_type frame_name ">
+        <gazebo reference="${link_name}">
+            <sensor name="${sensor_name}" type="ray">
+                <always_on>true</always_on>
+                <visualize>true</visualize>
+                <update_rate>10</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>${samples}</samples>
+                            <resolution>${resolution}</resolution>
+                            <min_angle>${min_angle}</min_angle>
+                            <max_angle>${max_angle}</max_angle>
+                        </horizontal>
+                    </scan>
+                    <range>
+                        <min>${min}</min>
+                        <max>${max}</max>
+                        <resolution>0.15</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin filename="libgazebo_ros_ray_sensor.so" name="${plugin_name}">
+                    <topic_name>${topic_name}</topic_name>
+                    <output_type>${output_type}</output_type>
+                    <frame_name>${frame_name}</frame_name>
+                    <radiation_type>infrared</radiation_type>
+                </plugin>
+            </sensor>
+        </gazebo>
+    </xacro:macro>
 </robot>

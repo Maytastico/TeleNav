@@ -29,6 +29,12 @@ enum
   telerobot_interfaces__msg__MoveCmd__FORWARD = 1
 };
 
+/// Constant 'BACKWARD'.
+enum
+{
+  telerobot_interfaces__msg__MoveCmd__BACKWARD = 4
+};
+
 /// Constant 'TURN_LEFT'.
 enum
 {
@@ -44,8 +50,8 @@ enum
 /// Struct defined in msg/MoveCmd in the package telerobot_interfaces.
 typedef struct telerobot_interfaces__msg__MoveCmd
 {
-  uint8_t joy_x;
-  uint8_t joy_y;
+  int8_t joy_x;
+  int8_t joy_y;
   uint8_t cmd;
 } telerobot_interfaces__msg__MoveCmd;
 

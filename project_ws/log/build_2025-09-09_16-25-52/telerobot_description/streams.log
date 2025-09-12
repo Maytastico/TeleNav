@@ -1,0 +1,56 @@
+[0.009s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller:/opt/ros/humble /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description
+[0.065s] -- The C compiler identification is GNU 11.4.0
+[0.117s] -- The CXX compiler identification is GNU 11.4.0
+[0.131s] -- Detecting C compiler ABI info
+[0.203s] -- Detecting C compiler ABI info - done
+[0.211s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.212s] -- Detecting C compile features
+[0.212s] -- Detecting C compile features - done
+[0.216s] -- Detecting CXX compiler ABI info
+[0.295s] -- Detecting CXX compiler ABI info - done
+[0.304s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.304s] -- Detecting CXX compile features
+[0.304s] -- Detecting CXX compile features - done
+[0.309s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.522s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.624s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.663s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.666s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.756s] -- Added test 'lint_cmake' to check CMake code style
+[0.757s] -- Added test 'xmllint' to check XML markup files
+[0.758s] -- Configuring done
+[0.761s] -- Generating done
+[0.763s] -- Build files have been written to: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description
+[0.768s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller:/opt/ros/humble /usr/bin/cmake /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/src/telerobot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description
+[0.771s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description -- -j6 -l6
+[0.808s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller:/opt/ros/humble /usr/bin/cmake --build /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description -- -j6 -l6
+[0.821s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description
+[0.831s] -- Install configuration: ""
+[0.832s] -- Execute custom install script
+[0.833s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/camera.xacro
+[0.842s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/common_properties.xacro
+[0.851s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/lidar.xacro
+[0.860s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/my_robot.urdf.xacro
+[0.868s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/robot_base.xacro
+[0.877s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/robot_base_gazebo.xacro
+[0.886s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/simple_distance.xacro
+[0.893s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//urdf/simple_robot.urdf.xacro
+[0.902s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//launch/display.launch.xml
+[0.911s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//launch/display_simple.launch.xml
+[0.922s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description//rviz/urdf_config.rviz
+[0.933s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/ament_index/resource_index/package_run_dependencies/telerobot_description
+[0.942s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/ament_index/resource_index/parent_prefix_path/telerobot_description
+[0.952s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/environment/ament_prefix_path.sh
+[0.959s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/environment/ament_prefix_path.dsv
+[0.968s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/environment/path.sh
+[0.978s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/environment/path.dsv
+[0.987s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/local_setup.bash
+[0.998s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/local_setup.sh
+[1.014s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/local_setup.zsh
+[1.023s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/local_setup.dsv
+[1.035s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/package.dsv
+[1.046s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/ament_index/resource_index/packages/telerobot_description
+[1.056s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/cmake/telerobot_descriptionConfig.cmake
+[1.068s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/cmake/telerobot_descriptionConfig-version.cmake
+[1.078s] -- Symlinking: /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_description/share/telerobot_description/package.xml
+[1.096s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller:/opt/ros/humble /usr/bin/cmake --install /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_description

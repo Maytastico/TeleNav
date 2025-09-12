@@ -58,10 +58,10 @@ struct MoveCmd_
 
   // field types and members
   using _joy_x_type =
-    uint8_t;
+    int8_t;
   _joy_x_type joy_x;
   using _joy_y_type =
-    uint8_t;
+    int8_t;
   _joy_y_type joy_y;
   using _cmd_type =
     uint8_t;
@@ -69,13 +69,13 @@ struct MoveCmd_
 
   // setters for named parameter idiom
   Type & set__joy_x(
-    const uint8_t & _arg)
+    const int8_t & _arg)
   {
     this->joy_x = _arg;
     return *this;
   }
   Type & set__joy_y(
-    const uint8_t & _arg)
+    const int8_t & _arg)
   {
     this->joy_y = _arg;
     return *this;
@@ -92,6 +92,8 @@ struct MoveCmd_
     0u;
   static constexpr uint8_t FORWARD =
     1u;
+  static constexpr uint8_t BACKWARD =
+    4u;
   static constexpr uint8_t TURN_LEFT =
     2u;
   static constexpr uint8_t TURN_RIGHT =
@@ -168,6 +170,11 @@ constexpr uint8_t MoveCmd_<ContainerAllocator>::STOP;
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr uint8_t MoveCmd_<ContainerAllocator>::FORWARD;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t MoveCmd_<ContainerAllocator>::BACKWARD;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17

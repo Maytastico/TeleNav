@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="mosro" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Robot Base-->
+    <xacro:include filename="common_properties.xacro" />
+    <xacro:include filename="mosro_base.xacro" />
+
+    <!-- Sensors -->
+    <xacro:include filename="mosro_gazebo.xacro" />
+</robot>

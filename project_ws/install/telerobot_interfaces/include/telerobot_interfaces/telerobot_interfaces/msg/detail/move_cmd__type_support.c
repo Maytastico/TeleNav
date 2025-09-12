@@ -34,7 +34,7 @@ void telerobot_interfaces__msg__MoveCmd__rosidl_typesupport_introspection_c__Mov
 static rosidl_typesupport_introspection_c__MessageMember telerobot_interfaces__msg__MoveCmd__rosidl_typesupport_introspection_c__MoveCmd_message_member_array[3] = {
   {
     "joy_x",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -51,7 +51,7 @@ static rosidl_typesupport_introspection_c__MessageMember telerobot_interfaces__m
   },
   {
     "joy_y",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

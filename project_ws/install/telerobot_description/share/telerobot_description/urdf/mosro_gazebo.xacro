@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Corrected property names and more reasonable dimensions -->
+    <xacro:property name="lidar_radius" value="0.01" />
+    <xacro:property name="lidar_length" value="0.01" />
+
+    <xacro:property name="camera_length" value="0.01" />
+    <xacro:property name="camera_width" value="0.1" />
+    <xacro:property name="camera_height" value="0.05" />
+
+    <gazebo reference="caster_wheel_link">
+        <material>Gazebo/Grey</material>
+        <mu1 value="0.1" />
+        <mu2 value="0.1" />
+    </gazebo>
+
+    <gazebo reference="camera_link">
+        <material>Gazebo/Red</material>
+    </gazebo>
+    <gazebo reference="front_obstacle_link">
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <gazebo reference="lidar_link">
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <link name="camera_link">
+        <visual>
+            <geometry>
+                <box size="${camera_length} ${camera_width} ${camera_height}" />
+            </geometry>
+            <material name="red" />
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${camera_length} ${camera_width} ${camera_height}" />
+            </geometry>
+        </collision>
+        <xacro:box_inertia m="0.01" l="${camera_length}" w="${camera_width}" h="${camera_height}"
+                           xyz="0 0 0" rpy="0 0 0" />
+    </link>
+
+    <joint name="base_camera_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="camera_link" />
+        <origin xyz="0 0.17 ${base_height/1.5}" rpy="0 0 ${3.14/2.0}" />
+    </joint>
+
+    <link name="camera_link_optical">
+    </link>
+
+    <joint name="camera_optical_joint" type="fixed">
+        <!-- these values have to be these values otherwise the gazebo camera
+            image won't be aligned properly with the frame it is supposedly
+            originating from -->
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="camera_link"/>
+        <child link="camera_link_optical"/>
+    </joint>
+
+    <gazebo reference="camera_link">
+        <material>Gazebo/Red</material>
+        <sensor name="camera_sensor" type="camera">
+            <pose>0 0 0 0 0 0</pose>
+            <visualize>true</visualize>
+            <update_rate>10.0</update_rate>
+            <plugin name="camera" filename="libgazebo_ros_camera.so">
+                <frame_name>camera_link_optical</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+    <link name="front_obstacle_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_length}"/>
+            </geometry>
+            <material name="red" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_length}"/>
+            </geometry>
+        </collision>
+        <xacro:cylinder_inertia m="0.01" r="${lidar_radius}" h="${lidar_length}" 
+                           xyz="0 0 0" rpy="0 0 0" />
+    </link>
+
+    <joint name="distance_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="front_obstacle_link" />
+        <!-- Placing lidar on top of the base (base_height is 0.2) -->
+        <origin xyz="0 0.17 ${(base_height*0.5)}" rpy="0 0 0" />
+    </joint>
+
+    <gazebo reference="front_obstacle_link">
+        <sensor name="lidar" type="ray">
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+            <update_rate>1</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>1</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>0.0</min_angle>
+                        <max_angle>0.0</max_angle>
+                    </horizontal>
+                </scan>
+                <range>
+                    <min>0.12</min>
+                    <max>12</max>
+                    <resolution>0.015</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </ray>
+            <plugin filename="libgazebo_ros_ray_sensor.so" name="distance_front">
+                <topic_name>front_distance</topic_name>
+                <output_type>sensor_msgs/Range</output_type>
+                <frame_name>front_obstacle_link</frame_name>
+                <radiation_type>infrared</radiation_type>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+        <!-- Corrected property names and more reasonable dimensions -->
+    <xacro:property name="lidar_radius" value="0.05" />
+    <xacro:property name="lidar_length" value="0.05" />
+
+    <link name="lidar_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_length}"/>
+            </geometry>
+            <material name="red" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_length}"/>
+            </geometry>
+        </collision>
+        <xacro:cylinder_inertia m="0.01" r="${lidar_radius}" h="${lidar_length}" 
+                           xyz="0 0 0" rpy="0 0 0" />
+    </link>
+
+    <joint name="base_lidar_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="lidar_link" />
+        <!-- Placing lidar on top of the base (base_height is 0.2) -->
+        <origin xyz="0 0 ${base_height+lidar_length/2.0+0.01}" rpy="0 0 0" />
+    </joint>
+        
+    <gazebo reference="lidar_link">
+        <sensor name="lidar" type="ray">
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+            <update_rate>5</update_rate>
+            <ray>
+            <scan>
+                <horizontal>
+                <samples>360</samples>
+                <resolution>1.000000</resolution>
+                <min_angle>0.000000</min_angle>
+                <max_angle>6.280000</max_angle>
+                </horizontal>
+            </scan>
+            <range>
+                <min>0.120000</min>
+                <max>3.5</max>
+                <resolution>0.015000</resolution>
+            </range>
+            <noise>
+                <type>gaussian</type>
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+            </noise>
+            </ray>
+            <plugin filename="libgazebo_ros_ray_sensor.so" name="lidar_plugin">
+                <topic_name>scan</topic_name>
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>lidar_link</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+</robot>

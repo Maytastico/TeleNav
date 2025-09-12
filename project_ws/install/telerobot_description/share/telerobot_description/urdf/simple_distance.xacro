@@ -44,7 +44,7 @@
             </scan>
             <range>
                 <min>0.12</min>
-                <max>3.5</max>
+                <max>300</max>
                 <resolution>0.015</resolution>
             </range>
             <noise>
@@ -55,7 +55,7 @@
         </ray>
         <plugin filename="libgazebo_ros_ray_sensor.so" name="distance_front">
             <topic_name>front_distance</topic_name>
-            <output_type>sensor_msgs/Range</output_type>
+            <output_type>sensor_msgs/LaserScan</output_type>
             <frame_name>tower_distance_link</frame_name>
             <radiation_type>infrared</radiation_type>
         </plugin>
@@ -101,7 +101,7 @@
             </scan>
             <range>
                 <min>0.12</min>
-                <max>3.5</max>
+                <max>300</max>
                 <resolution>0.015</resolution>
             </range>
             <noise>
@@ -144,36 +144,36 @@
     </joint>
 
     <gazebo reference="bumper_distance_back_link">
-    <sensor name="lower_back_lidar" type="ray">
-        <always_on>true</always_on>
-        <visualize>true</visualize>
-        <update_rate>1</update_rate>
-        <ray>
-            <scan>
-                <horizontal>
-                    <samples>1</samples>
-                    <resolution>1.0</resolution>
-                    <min_angle>0.0</min_angle>
-                    <max_angle>0.0</max_angle>
-                </horizontal>
-            </scan>
-            <range>
-                <min>0.12</min>
-                <max>3.5</max>
-                <resolution>0.015</resolution>
-            </range>
-            <noise>
-                <type>gaussian</type>
-                <mean>0.0</mean>
-                <stddev>0.01</stddev>
-            </noise>
-        </ray>
-        <plugin filename="libgazebo_ros_ray_sensor.so" name="distance_back">
-            <topic_name>back_distance</topic_name>
-            <output_type>sensor_msgs/Range</output_type>
-            <frame_name>bumper_distance_back_link</frame_name>
-            <radiation_type>infrared</radiation_type>
-        </plugin>
-    </sensor>
-</gazebo>
+        <sensor name="lower_back_lidar" type="ray">
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+            <update_rate>1</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>1</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>0.0</min_angle>
+                        <max_angle>0.0</max_angle>
+                    </horizontal>
+                </scan>
+                <range>
+                    <min>0.12</min>
+                    <max>300</max>
+                    <resolution>0.015</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </ray>
+            <plugin filename="libgazebo_ros_ray_sensor.so" name="distance_back">
+                <topic_name>back_distance</topic_name>
+                <output_type>sensor_msgs/Range</output_type>
+                <frame_name>bumper_distance_back_link</frame_name>
+                <radiation_type>infrared</radiation_type>
+            </plugin>
+        </sensor>
+    </gazebo>
 </robot>

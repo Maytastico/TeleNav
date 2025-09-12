@@ -39,13 +39,26 @@
             </div>
         </div>
     </div>
+    <div>
+        <h3>Steuerungshinweise:</h3>
+        <ul>
+            <li>Verwenden Sie den Joystick, um den Roboter zu steuern.</li>
+            <li>Alternativ können Sie die Tasten W (vorwärts), A (links), S (rückwärts), D (rechts) verwenden.</li>
+            <li>Drücken Sie die Leertaste, um den Roboter anzuhalten.</li>
+        </ul>
+    </div>    
     <script>
-        // Joystick initialisieren
+
+        /**
+         * Enumeration for movement commands.
+         * @enum {number}
+         */
         const MoveCmdEnum = Object.freeze({
             STOP: 0,
             FORWARD: 1,
             TURN_LEFT: 2,
             TURN_RIGHT: 3,
+            BACKWARD: 4,
             fromString: function(cmdStr) {
                 const key = cmdStr.toUpperCase();
                 if (this.hasOwnProperty(key)) {
@@ -54,38 +67,52 @@
                 throw new Error(`Unknown command: ${cmdStr}`);
             }
         });
-
-        class MoveCmd {
-            constructor(x, y, cmd) {
-                this.x = x;
-                this.y = y;
+        
+        /**
+         * Stores the joystick command data.
+         * @class
+         */
+        class MoveCmd {         
+            constructor(joy_x, joy_y, cmd) {
+                this.joy_x = joy_x;
+                this.joy_y = joy_y;
                 this.cmd = cmd; // should be a value from MoveCmdEnum
             }
         }
+        let lastCommand = null;
 
         var joystick = new JoyStick('joystick', {}, function(stickData) {
             // stickData enthält x, y, cardinalDirection
+            console.log('Joystick Data:', stickData);
+            
+            
             let direction = stickData.cardinalDirection;
             let cmd = null;
-            let getx = stickData.getx;
-            let gety = stickData.gety;
+            let getx = parseInt(stickData.x);
+            let gety = parseInt(stickData.y);
             if (direction === "N") cmd = "FORWARD";
-            else if (direction === "S") cmd = "STOP";
+            else if (direction === "S") cmd = "BACKWARD";
             else if (direction === "W") cmd = "TURN_LEFT";
             else if (direction === "E") cmd = "TURN_RIGHT";
             else if (direction === "C") cmd = "STOP";
-            // Nur senden, wenn Richtung erkannt
             
             if (cmd) {
-                sendCommand(new MoveCmd(getx, gety, cmd));
+                move_cmd = new MoveCmd(getx, gety, cmd)
+
+                // Looks for duplicate commands and ignores them
+                if (JSON.stringify(move_cmd) === JSON.stringify(lastCommand)) return;
+
+                lastCommand = move_cmd
+                sendCommand(move_cmd);
             }
         });
 
-        let lastCommand = null;
-
+        /**
+         * Sends the Joystick data to the server.
+         * @param {MoveCmd} move_cmd
+         */
         function sendCommand(move_cmd) {
-            if (move_cmd.cmd === lastCommand) return;
-            lastCommand = move_cmd.cmd;
+            console.log('Sende Befehl:', move_cmd);
             fetch('/control', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
@@ -94,6 +121,145 @@
               .then(data => console.log(data))
               .catch(err => alert('Fehler beim Senden: ' + err));
         }
+
+        document.addEventListener('keydown', function(event) {
+            let cmd = null;
+            let joy_x = 0, joy_y = 0;
+
+            switch(event.key.toLowerCase()) {
+                case 'w':
+                    cmd = "FORWARD";
+                    joy_y = 100;
+                    break;
+                case 's':
+                    cmd = "BACKWARD";
+                    joy_y = -100;
+                    break;
+                case 'a':
+                    cmd = "TURN_LEFT";
+                    joy_x = -100;
+                    break;
+                case 'd':
+                    cmd = "TURN_RIGHT";
+                    joy_x = 100;
+                    break;
+                case ' ':
+                    cmd = "STOP";
+                    break;
+                default:
+                    return; // ignore other keys
+            }
+
+            const move_cmd = new MoveCmd(joy_x, joy_y, cmd);
+
+            if (JSON.stringify(move_cmd) === JSON.stringify(lastCommand)) return;
+            lastCommand = move_cmd;
+            sendCommand(move_cmd);
+
+            // Optional: Visuelles Feedback für den Joystick (simuliert)
+            const joystickDiv = document.getElementById('joystick');
+            if (joystickDiv) {
+                joystickDiv.style.boxShadow = '0 0 10px 2px #007bff';
+                setTimeout(() => joystickDiv.style.boxShadow = '', 150);
+            }
+
+            // Move the joystick visually according to the key pressed
+            // Find the canvas inside the joystick div
+            const canvas = joystickDiv.querySelector('canvas');
+            if (canvas && typeof joystick.GetWidth === 'function') {
+                // Get center and max move
+                const width = joystick.GetWidth();
+                const height = joystick.GetHeight();
+                const centerX = width / 2;
+                const centerY = height / 2;
+                // These values are from the JoyStick library
+                const maxMoveStick = (width - ((width / 2) + 10)) / 2 + 5;
+
+                let movedX = centerX;
+                let movedY = centerY;
+
+                // Set movedX/movedY based on key
+                switch(cmd) {
+                    case "FORWARD":
+                        movedY = centerY - maxMoveStick;
+                        break;
+                    case "BACKWARD":
+                        movedY = centerY + maxMoveStick;
+                        break;
+                    case "TURN_LEFT":
+                        movedX = centerX - maxMoveStick;
+                        break;
+                    case "TURN_RIGHT":
+                        movedX = centerX + maxMoveStick;
+                        break;
+                    case "STOP":
+                        movedX = centerX;
+                        movedY = centerY;
+                        break;
+                }
+
+                // Redraw joystick
+                const context = canvas.getContext('2d');
+                const circumference = 2 * Math.PI;
+                const internalRadius = (width - ((width / 2) + 10)) / 2;
+                const externalRadius = internalRadius + 30;
+
+                // Clear canvas
+                context.clearRect(0, 0, width, height);
+
+                // Draw external circle
+                context.beginPath();
+                context.arc(centerX, centerY, externalRadius, 0, circumference, false);
+                context.lineWidth = 2;
+                context.strokeStyle = "#008000";
+                context.stroke();
+
+                // Draw internal stick
+                context.beginPath();
+                context.arc(movedX, movedY, internalRadius, 0, circumference, false);
+                // create radial gradient
+                const grd = context.createRadialGradient(centerX, centerY, 5, centerX, centerY, 200);
+                grd.addColorStop(0, "#00AA00");
+                grd.addColorStop(1, "#003300");
+                context.fillStyle = grd;
+                context.fill();
+                context.lineWidth = 2;
+                context.strokeStyle = "#003300";
+                context.stroke();
+
+                // Optionally, reset to center after a short delay for visual feedback
+                if (cmd !== "STOP") {
+                    setTimeout(() => {
+                        context.clearRect(0, 0, width, height);
+                        // Draw external circle
+                        context.beginPath();
+                        context.arc(centerX, centerY, externalRadius, 0, circumference, false);
+                        context.lineWidth = 2;
+                        context.strokeStyle = "#008000";
+                        context.stroke();
+                        // Draw internal stick at center
+                        context.beginPath();
+                        context.arc(centerX, centerY, internalRadius, 0, circumference, false);
+                        const grd2 = context.createRadialGradient(centerX, centerY, 5, centerX, centerY, 200);
+                        grd2.addColorStop(0, "#00AA00");
+                        grd2.addColorStop(1, "#003300");
+                        context.fillStyle = grd2;
+                        context.fill();
+                        context.lineWidth = 2;
+                        context.strokeStyle = "#003300";
+                        context.stroke();
+                    }, 150);
+                }
+            }
+            document.addEventListener('keypress', function(event) {
+                if (event.key.toLowerCase() === 'space') {
+                    const stop_cmd = new MoveCmd(0, 0, "STOP");
+                    if (JSON.stringify(stop_cmd) === JSON.stringify(lastCommand)) return;
+                    lastCommand = stop_cmd;
+                    sendCommand(stop_cmd);
+                }
+            }, { once: true });
+        });
     </script>
 </body>
 </html>

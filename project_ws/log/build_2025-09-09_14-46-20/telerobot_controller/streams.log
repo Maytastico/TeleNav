@@ -1,0 +1,31 @@
+[0.572s] Invoking command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/build --no-deps symlink_data --force
+[0.805s] running develop
+[0.968s] running egg_info
+[0.968s] writing telerobot_controller.egg-info/PKG-INFO
+[0.968s] writing dependency_links to telerobot_controller.egg-info/dependency_links.txt
+[0.968s] writing entry points to telerobot_controller.egg-info/entry_points.txt
+[0.968s] writing requirements to telerobot_controller.egg-info/requires.txt
+[0.968s] writing top-level names to telerobot_controller.egg-info/top_level.txt
+[0.971s] reading manifest file 'telerobot_controller.egg-info/SOURCES.txt'
+[0.973s] writing manifest file 'telerobot_controller.egg-info/SOURCES.txt'
+[0.974s] running build_ext
+[0.975s] Creating /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/python3.10/site-packages/telerobot-controller.egg-link (link to .)
+[0.975s] Installing controller script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/telerobot_controller
+[0.976s] Installing interface script to /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/telerobot_controller
+[0.976s] 
+[0.976s] Installed /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller
+[0.976s] running symlink_data
+[0.977s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/resource/telerobot_controller -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/share/ament_index/resource_index/packages
+[0.977s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/package.xml -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/share/telerobot_controller
+[0.977s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/templates/index.html -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/share/telerobot_controller/templates
+[0.978s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/static/main.js -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/share/telerobot_controller/static
+[0.978s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/static/joystick.min.js -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/share/telerobot_controller/static
+[0.978s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/telerobot_controller/helpers/__init__.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/telerobot_controller/helpers
+[0.978s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/telerobot_controller/helpers/movecmd_to_twist.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/telerobot_controller/helpers
+[0.978s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/telerobot_controller/types/__init__.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/telerobot_controller/types
+[0.978s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/telerobot_controller/types/messurement.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/telerobot_controller/types
+[0.978s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/telerobot_controller/types/move_cmd_enum.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/telerobot_controller/types
+[0.978s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/telerobot_controller/nodes/image_subscriber.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/telerobot_controller/nodes
+[0.978s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/telerobot_controller/nodes/__init__.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/telerobot_controller/nodes
+[0.979s] symbolically linking /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/telerobot_controller/nodes/move_cmd_publisher.py -> /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/telerobot_controller/nodes
+[1.027s] Invoked command in '/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller' returned '0': PYTHONPATH=/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/install/telerobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /media/ros/fedora/home/maylis/Dokumente/TeleNav/project_ws/build/telerobot_controller/build --no-deps symlink_data --force
