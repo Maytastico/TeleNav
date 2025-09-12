@@ -55,7 +55,7 @@
         </ray>
         <plugin filename="libgazebo_ros_ray_sensor.so" name="distance_front">
             <topic_name>front_distance</topic_name>
-            <output_type>sensor_msgs/LaserScan</output_type>
+            <output_type>sensor_msgs/Range</output_type>
             <frame_name>tower_distance_link</frame_name>
             <radiation_type>infrared</radiation_type>
         </plugin>

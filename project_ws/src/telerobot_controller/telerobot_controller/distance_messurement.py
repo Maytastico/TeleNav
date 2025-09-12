@@ -1,7 +1,7 @@
 import rclpy, math
 from rclpy.node import Node
 from rclpy.executors import MultiThreadedExecutor
-from sensor_msgs.msg import LaserScan
+from sensor_msgs.msg import Range
 from geometry_msgs.msg import Twist
 from telerobot_interfaces.msg import MoveCmd
 from telerobot_controller.types.messurement import Measurements
@@ -17,7 +17,7 @@ class DistanceReader(Node):
         self.measurements = Measurements()
 
         self.front_subscription = self.create_subscription(
-            LaserScan,
+            Range,
             '/distance_front/out',
             self.front_callback,
             10
@@ -38,18 +38,18 @@ class DistanceReader(Node):
 
         self.get_logger().info('New DistanceReader-Node gestartet.')
 
-    def front_callback(self, msg: LaserScan):
+    def front_callback(self, msg: Range):
             """
             Callback-Funktion für den vorderen Lidar-Sensor.
             Hier wird geprüft, ob die gelesene Distanz gültig ist.
             """
             # Check for NaN or infinite values before processing
             self.get_logger().warn(f'Vordere Distanz aktualisiert: {self.measurements.front_distance} m')
-            if not math.isnan(msg.ranges[0]) and not math.isinf(msg.ranges[0]):
+            if not math.isnan(msg.range) and not math.isinf(msg.range):
                 # self.get_logger().info(f'Vordere Distanz: {msg.range} m') # Uncomment if you want to log valid distances
-                self.measurements.front_distance = msg.ranges[0]
+                self.measurements.front_distance = msg.range
             else:
-                self.get_logger().warn(f'Ungültiger Distanzwert empfangen: {msg.ranges[0]}. Nachricht wird ignoriert.')
+                self.get_logger().warn(f'Ungültiger Distanzwert empfangen: {msg.range}. Nachricht wird ignoriert.')
 
     # def lower_callback(self,  msg: LaserScan):
     #     """
